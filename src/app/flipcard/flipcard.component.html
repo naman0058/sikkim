@@ -1,0 +1,129 @@
+<style>
+
+/*
+flip card
+*/
+a{
+    color:white
+}
+li{
+    color:white
+}
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+</style>
+
+
+<br/><br/>
+<div class="container">
+    <div class="row">
+        
+        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-danger">
+                    <div class="card-body" style="height:200px">
+                        <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i>
+                        <h5 class="card-title">  Department of Financial Services</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card-back bg-danger text-black">
+                    <div class="card-body"  style="height:200px">
+                        <ul>
+                            <a href=""> <li>About Departments</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Arts & Rules</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>PMJDY</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Notification</li> </a>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-primary">
+                    <div class="card-body">
+                        <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i>
+                        <h5 class="card-title"> Department of Revenue</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card-back bg-primary">
+                    <div class="card-body text-white">
+                        <ul>
+                            <a href=""> <li>About Departments</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Arts & Rules</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>E-Services</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Contact Details</li> </a>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-danger">
+                    <div class="card-body">
+                        <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i>
+                        <h5 class="card-title"> Department of Investment and Public Asset Managment</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card-back bg-danger text-white">
+                    <div class="card-body">
+                        <ul>
+                            <a href=""> <li>About Departments</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Disinvestment Policy </li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Investors</li> </a>
+                            <div class="dropdown-divider"></div>
+                            <a href=""> <li>Contact Details</li> </a>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       
+       
+    </div>
+</div>
+
+<app-partner></app-partner>
+
+
+
+

@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     FooterComponent,
     FeedbackComponent,
     ContactusComponent,
-    SitemapComponent
+    SitemapComponent,
+    VacanciesComponent
   ],
   imports: [
     BrowserModule,

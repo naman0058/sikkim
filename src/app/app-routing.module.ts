@@ -6,13 +6,15 @@ import {HomeComponent} from './home/home.component'
 import {FeedbackComponent} from './feedback/feedback.component'
 import {ContactusComponent} from './contactus/contactus.component'
 import {SitemapComponent} from './sitemap/sitemap.component'
+import {VacanciesComponent} from './vacancies/vacancies.component'
 
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path : 'feedback', component : FeedbackComponent},
   {path : 'contactus', component:ContactusComponent},
-  {path : 'sitemap', component:SitemapComponent}
+  {path : 'sitemap', component:SitemapComponent},
+  {path : 'employees-vacancies', component:VacanciesComponent}
 ];
 
 @NgModule({

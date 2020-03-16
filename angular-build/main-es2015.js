@@ -39,6 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./feedback/feedback.component */ "./src/app/feedback/feedback.component.ts");
 /* harmony import */ var _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contactus/contactus.component */ "./src/app/contactus/contactus.component.ts");
 /* harmony import */ var _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sitemap/sitemap.component */ "./src/app/sitemap/sitemap.component.ts");
+/* harmony import */ var _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vacancies/vacancies.component */ "./src/app/vacancies/vacancies.component.ts");
+
 
 
 
@@ -52,7 +54,8 @@ const routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'feedback', component: _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_3__["FeedbackComponent"] },
     { path: 'contactus', component: _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_4__["ContactusComponent"] },
-    { path: 'sitemap', component: _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_5__["SitemapComponent"] }
+    { path: 'sitemap', component: _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_5__["SitemapComponent"] },
+    { path: 'employees-vacancies', component: _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_6__["VacanciesComponent"] }
 ];
 class AppRoutingModule {
 }
@@ -136,6 +139,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./feedback/feedback.component */ "./src/app/feedback/feedback.component.ts");
 /* harmony import */ var _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./contactus/contactus.component */ "./src/app/contactus/contactus.component.ts");
 /* harmony import */ var _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./sitemap/sitemap.component */ "./src/app/sitemap/sitemap.component.ts");
+/* harmony import */ var _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./vacancies/vacancies.component */ "./src/app/vacancies/vacancies.component.ts");
+
 
 
 
@@ -166,7 +171,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
         _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"],
         _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"],
-        _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"],
+        _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -181,7 +187,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
                     _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"],
                     _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"],
-                    _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"]
+                    _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"],
+                    _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1052,7 +1059,7 @@ class NavbarComponent {
     }
 }
 NavbarComponent.ɵfac = function NavbarComponent_Factory(t) { return new (t || NavbarComponent)(); };
-NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavbarComponent, selectors: [["app-navbar"]], decls: 138, vars: 52, consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], [1, "navbar", "navbar-expand-lg", "navbar-dark", 2, "background-color", "black"], ["href", "#", 1, "navbar-brand"], ["src", "http://sikkimfred.gov.in/images/BannerFREDWhite1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"]], template: function NavbarComponent_Template(rf, ctx) { if (rf & 1) {
+NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavbarComponent, selectors: [["app-navbar"]], decls: 138, vars: 52, consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], [1, "navbar", "navbar-expand-lg", "navbar-dark", 2, "background-color", "black"], ["href", "#", 1, "navbar-brand"], ["src", "http://sikkimfred.gov.in/images/BannerFREDWhite1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], ["href", "", 1, "dropdown-item"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"]], template: function NavbarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1235,19 +1242,19 @@ NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, " Login ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "div", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "a", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "a", 26);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "Registeration");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](131, "div", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "a", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "a", 26);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, "Login");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "form", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](135, "input", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "button", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "form", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](135, "input", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "button", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "Search");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1814,6 +1821,92 @@ SitemapComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
                 selector: 'app-sitemap',
                 templateUrl: './sitemap.component.html',
                 styleUrls: ['./sitemap.component.css']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/vacancies/vacancies.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/vacancies/vacancies.component.ts ***!
+  \**************************************************/
+/*! exports provided: VacanciesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VacanciesComponent", function() { return VacanciesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class VacanciesComponent {
+    constructor() {
+    }
+    ngOnInit() {
+    }
+}
+VacanciesComponent.ɵfac = function VacanciesComponent_Factory(t) { return new (t || VacanciesComponent)(); };
+VacanciesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: VacanciesComponent, selectors: [["app-vacancies"]], decls: 33, vars: 0, consts: [[1, "container"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12"], [1, "col-xs-12", "col-lg-12", "col-md-12", "col-sm-12"], ["id", "nav-tab", "role", "tablist", 1, "nav", "nav-tabs", "nav-fill"], ["id", "nav-home-tab", "data-toggle", "tab", "href", "#nav-home", "role", "tab", "aria-controls", "nav-home", "aria-selected", "true", 1, "nav-item", "nav-link", "active"], ["id", "nav-profile-tab", "data-toggle", "tab", "href", "#nav-profile", "role", "tab", "aria-controls", "nav-profile", "aria-selected", "false", 1, "nav-item", "nav-link"], ["id", "nav-contact-tab", "data-toggle", "tab", "href", "#nav-contact", "role", "tab", "aria-controls", "nav-contact", "aria-selected", "false", 1, "nav-item", "nav-link"], ["id", "nav-about-tab", "data-toggle", "tab", "href", "#nav-about", "role", "tab", "aria-controls", "nav-about", "aria-selected", "false", 1, "nav-item", "nav-link"], ["id", "nav-tabContent", 1, "tab-content", "py-3", "px-3", "px-sm-0"], ["id", "nav-home", "role", "tabpanel", "aria-labelledby", "nav-home-tab", 1, "tab-pane", "fade", "show", "active"], ["id", "nav-profile", "role", "tabpanel", "aria-labelledby", "nav-profile-tab", 1, "tab-pane", "fade"], ["id", "nav-contact", "role", "tabpanel", "aria-labelledby", "nav-contact-tab", 1, "tab-pane", "fade"], ["id", "nav-about", "role", "tabpanel", "aria-labelledby", "nav-about-tab", 1, "tab-pane", "fade"]], template: function VacanciesComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Employment Notice");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "nav");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "2016-2017");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "2015-2016");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "2014-2015");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "2013-2012");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "a", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "2012-2013");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, " Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](32, "br");
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZhY2FuY2llcy92YWNhbmNpZXMuY29tcG9uZW50LmNzcyJ9 */", "nav[_ngcontent-%COMP%]    > .nav.nav-tabs[_ngcontent-%COMP%]{\n    \n    border: none;\n      color:#fff;\n      background:#272e38;\n      border-radius:0;\n    \n    }\n    nav[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   a.nav-item.nav-link[_ngcontent-%COMP%], nav[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   a.nav-item.nav-link.active[_ngcontent-%COMP%]\n    {\n    border: none;\n      padding: 18px 25px;\n      color:#fff;\n      background:#272e38;\n      border-radius:0;\n    }\n    \n    nav[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   a.nav-item.nav-link.active[_ngcontent-%COMP%]:after\n    {\n    content: \"\";\n    position: relative;\n    bottom: -60px;\n    left: -10%;\n    border: 15px solid transparent;\n    border-top-color: #e74c3c ;\n    }\n    .tab-content[_ngcontent-%COMP%]{\n    background: #fdfdfd;\n      line-height: 25px;\n      border: 1px solid #ddd;\n      border-top:5px solid #e74c3c;\n      border-bottom:5px solid #e74c3c;\n      padding:30px 25px;\n    }\n    \n    nav[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   a.nav-item.nav-link[_ngcontent-%COMP%]:hover, nav[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]   a.nav-item.nav-link[_ngcontent-%COMP%]:focus\n    {\n    border: none;\n      background: #e74c3c;\n      color:#fff;\n      border-radius:0;\n      transition:background 0.20s linear;\n    }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](VacanciesComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-vacancies',
+                templateUrl: './vacancies.component.html',
+                styleUrls: ['./vacancies.component.css']
             }]
     }], function () { return []; }, null); })();
 

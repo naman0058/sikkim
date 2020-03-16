@@ -1356,7 +1356,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-flipcard"]],
       decls: 83,
       vars: 0,
-      consts: [[1, "container"], [1, "row"], [1, "col-lg-4", "col-md-6", "col-xs-12", 2, "padding", "5px"], [1, "card", "card-flip", "h-100"], [1, "card-front", "text-white", "bg-danger"], [1, "card-body", 2, "height", "200px"], [1, "fa", "fa-arrow-circle-right", "fa-5x", "float-right", 2, "font-size", "40px"], [1, "card-title"], [1, "card-text"], [1, "card-back", "bg-danger", "text-black"], ["href", ""], [1, "dropdown-divider"], [1, "card-front", "text-white", "bg-primary"], [1, "card-body"], [1, "card-back", "bg-primary"], [1, "card-body", "text-white"], [1, "card-back", "bg-danger", "text-white"]],
+      consts: [[1, "container"], [1, "row"], [1, "col-lg-4", "col-md-6", "col-xs-12", 2, "padding", "5px"], [1, "card", "card-flip", "h-100"], [1, "card-front", "text-white", "bg-danger"], [1, "card-body", 2, "height", "200px"], [1, "fa", "fa-arrow-circle-right", "fa-5x", "float-right", 2, "font-size", "40px"], [1, "card-title"], [1, "card-text"], [1, "card-back", "bg-danger", "text-black"], ["href", ""], [1, "dropdown-divider"], [1, "card-front", "text-white", "bg-primary"], [1, "card-back", "bg-primary"], [1, "card-body", "text-white", 2, "height", "200px"], [1, "card-back", "bg-danger", "text-white"]],
       template: function FlipcardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
@@ -1457,7 +1457,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "i", 6);
 
@@ -1473,9 +1473,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "ul");
 
@@ -1541,7 +1541,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "i", 6);
 
@@ -1557,9 +1557,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "div", 5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "ul");
 
@@ -2143,9 +2143,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NavbarComponent,
       selectors: [["app-navbar"]],
-      decls: 124,
+      decls: 138,
       vars: 52,
-      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], [1, "navbar", "navbar-expand-lg", "navbar-dark", 2, "background-color", "black"], ["href", "#", 1, "navbar-brand"], ["src", "http://sikkimfred.gov.in/images/BannerFREDWhite1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"]],
+      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], [1, "navbar", "navbar-expand-lg", "navbar-dark", 2, "background-color", "black"], ["href", "#", 1, "navbar-brand"], ["src", "http://sikkimfred.gov.in/images/BannerFREDWhite1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -2500,6 +2500,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "li", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](126, "i", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, " Login ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "a", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "Registeration");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](131, "div", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "a", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, "Login");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "form", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](135, "input", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "button", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "Search");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2690,7 +2732,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-partner"]],
       decls: 17,
       vars: 0,
-      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-xs-12", 2, "padding", "0px"], ["id", "partner"], ["height", "100%", "scrollamount", "5", "direction", "left", "loop", "true"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/logo_indian_code.jpg", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/pg-portal_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/eci.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/myvisit-logo_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/e-gazette_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/india-gov.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/mygov.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/pmnrf.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/digital-India-logo.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/makeinindia.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"]],
+      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-xs-12", 2, "padding", "0px"], ["id", "partner"], ["height", "100%", "scrollamount", "5", "direction", "left", "loop", "true", "onmouseover", "this.stop()", "onmouseout", "this.start()"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/logo_indian_code.jpg", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/pg-portal_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/eci.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/myvisit-logo_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/e-gazette_0.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/india-gov.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/mygov.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "https://finmin.nic.in/sites/default/files/pmnrf.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "https://finmin.nic.in/sites/default/files/digital-India-logo.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "https://finmin.nic.in/sites/default/files/makeinindia.png", 2, "border-width", "0px", "height", "100px", "width", "100px", "border", "1px solid black", "margin-right", "20px"]],
       template: function PartnerComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
@@ -2814,7 +2856,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-simplecard"]],
       decls: 154,
       vars: 0,
-      consts: [[1, "container"], [1, "row"], [1, "col-lg-4", "col-md-6", "col-xs-12", 2, "padding", "5px"], [1, "card"], [1, "card-header", 2, "background-color", "brown", "color", "white"], [1, "card-body", 2, "height", "250px"], ["height", "200px", "scrollamount", "2", "direction", "up", "loop", "true"], ["href", ""], [1, "fa", "fa-angle-double-right"], [1, "card-body"], ["height", "100%", "scrollamount", "5", "direction", "left", "loop", "true"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "http://sikkimfred.gov.in/user/images/GOVERNOR.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "http://sikkimfred.gov.in/user/images/CM.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "http://sikkimfred.gov.in/user/images/sec.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"]],
+      consts: [[1, "container"], [1, "row"], [1, "col-lg-4", "col-md-6", "col-xs-12", 2, "padding", "5px"], [1, "card"], [1, "card-header", 2, "background-color", "brown", "color", "white"], [1, "card-body", 2, "height", "250px"], ["height", "200px", "scrollamount", "2", "direction", "up", "loop", "true", "onmouseover", "this.stop()", "onmouseout", "this.start()"], ["href", ""], [1, "fa", "fa-angle-double-right"], [1, "card-body"], ["height", "100%", "scrollamount", "5", "direction", "left", "loop", "true", "onmouseover", "this.stop()", "onmouseout", "this.start()"], ["id", "ctl00_ContentPlaceHolder1_Image2", "src", "http://sikkimfred.gov.in/user/images/GOVERNOR.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image1", "src", "http://sikkimfred.gov.in/user/images/CM.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"], ["id", "ctl00_ContentPlaceHolder1_Image3", "src", "http://sikkimfred.gov.in/user/images/sec.jpg", 2, "border-width", "0px", "height", "251px", "width", "240px", "border", "1px solid black", "margin-right", "20px"]],
       template: function SimplecardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");

@@ -13,6 +13,18 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
+import { FormsComponent } from './forms/forms.component';
+import { TrainingComponent } from './training/training.component';
+import { LetterComponent } from './letter/letter.component';
+import { NotificationComponent } from './notification/notification.component';
+import { GeneralComponent } from './general/general.component';
+import { OfficeComponent } from './office/office.component';
+import { GazatteComponent } from './gazatte/gazatte.component';
+import { PensionComponent } from './pension/pension.component';
+import { PensionNotificationComponent } from './pension-notification/pension-notification.component';
+import { PaoNotificationComponent } from './pao-notification/pao-notification.component';
+import { DaComponent } from './da/da.component';
+import { TransferComponent } from './transfer/transfer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +38,19 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     FeedbackComponent,
     ContactusComponent,
     SitemapComponent,
-    VacanciesComponent
+    VacanciesComponent,
+    FormsComponent,
+    TrainingComponent,
+    LetterComponent,
+    NotificationComponent,
+    GeneralComponent,
+    OfficeComponent,
+    GazatteComponent,
+    PensionComponent,
+    PensionNotificationComponent,
+    PaoNotificationComponent,
+    DaComponent,
+    TransferComponent
   ],
   imports: [
     BrowserModule,

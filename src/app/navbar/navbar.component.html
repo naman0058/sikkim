@@ -2,6 +2,140 @@
    a {
         color:blue
     }
+    .navbar{
+      z-index:1 ;
+    }
+    .search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.search * {
+  outline: none;
+  box-sizing: border-box;
+}
+.search__wrapper {
+  position: relative;
+}
+.search__field {
+  width: 20px;
+  height: 50px;
+   padding: 0.35em 50px 0.35em 0;
+  border: 1px solid transparent;
+   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search__field:focus {
+  width: 30vw;
+   cursor: default;
+}
+.search__field:focus ~ .search__icon {
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.search__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 1.35em;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 0%;
+  pointer-events: none;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+.search__field::-webkit-input-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field:-moz-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field::-moz-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field:-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, color;
+  transition-duration: .1s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+.search__field::-webkit-input-placeholder[style*=hidden] {
+  color: #83b0c1;
+  font-size: .65em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field:-moz-placeholder[style*=hidden] {
+  color: #83b0c1;
+  font-size: .65em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field::-moz-placeholder[style*=hidden] {
+  color: #83b0c1;
+  font-size: .65em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+.search__field:-ms-input-placeholder[style*=hidden] {
+  color: #83b0c1;
+  font-size: .65em;
+  font-weight: normal;
+  top: -20px;
+  opacity: 1;
+  visibility: visible !important;
+}
+
   
 </style>
         
@@ -25,7 +159,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
               
@@ -61,6 +195,8 @@
                         </div>
                       </li>
 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
                 <li class="nav-item dropdown">
                   <a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,7 +225,7 @@
                   </div>
                 </li>
 
-
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 <li class="nav-item dropdown">
                         <a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -107,7 +243,7 @@
                         </div>
                       </li>
 
-
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       
                 <li class="nav-item dropdown">
                         <a  style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,6 +258,8 @@
                          
                         </div>
                       </li>
+
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                       <li class="nav-item dropdown">
                         <a  style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -144,11 +282,11 @@
                          
                         </div>
                       </li>
-
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item">
                         <a style="color:white" class="nav-link " [routerLink]="['/contactus']" tabindex="-1" aria-disabled="true">Contact us</a>
                       </li>
-
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                       <li class="nav-item dropdown">
                         <a  style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -167,8 +305,10 @@
 
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  <div class="search__wrapper">
+                      <input type="text" name="" placeholder="Search for..." class="search__field form-control">
+                      <button type="submit" class="fa fa-search search__icon"></button>
+                    </div>
               </form>
             </div>
           </nav>

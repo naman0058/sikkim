@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+declare  var jQuery:  any;
+
+
+
+
 
 @Component({
   selector: 'app-partner',
@@ -9,7 +14,11 @@ export class PartnerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    (function ($) {
+      $(document).ready(function(){
+      	
+      });
+    })(jQuery);
   }
-
 }

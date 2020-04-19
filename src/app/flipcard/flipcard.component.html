@@ -1,131 +1,149 @@
 <style>
 
-/*
-flip card
-*/
-a{
-    color:white
-}
-li{
-    color:white
-}
-.card-flip > div {
-  backface-visibility: hidden;
-  transition: transform 300ms;
-  transition-timing-function: linear;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-}
-
-.card-front {
-  transform: rotateY(0deg);
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-}
-
-.card-flip:hover .card-front {
-  transform: rotateY(-180deg);
-}
-  
-.card-flip:hover .card-back {
-  transform: rotateY(0deg);
-}
-
-</style>
-
-
-<br/><br/>
-<div class="container">
-    <div class="row">
+        /*
+        flip card
+        */
+        a{
+            color:white
+        }
+        li{
+            color:white
+        }
+        .card-flip > div {
+          backface-visibility: hidden;
+          transition: transform 300ms;
+          transition-timing-function: linear;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          display: flex;
+        }
         
-        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
-            <div class="card card-flip h-100">
-                <div class="card-front text-white " style="	background-color: brown;">
-                    <div class="card-body" style="height:200px">
-                        <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
-                        <h5 class="card-title">  Department of Financial Services</h5>
-                        <img src="https://finmin.nic.in/sites/default/files/box1-image.png" style="width:150px;height:100px;margin-top: 24px;"/>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-                <div class="card-back bg-danger text-black">
-                    <div class="card-body"  style="height:200px">
-                        <ul>
-                            <a href=""> <li>About Departments</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Arts & Rules</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>PMJDY</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Notification</li> </a>
-                           </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
-            <div class="card card-flip h-100">
-                <div class="card-front text-white" style="	background-color: #007b5e !important;">
-                    <div class="card-body" style="height:200px">
-                        <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
-                        <h5 class="card-title"> Department of Revenue</h5>
-                        <img src="https://finmin.nic.in/sites/default/files/box4-image.png" style="width:150px;height:100px;margin-top: 24px"/>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-                <div class="card-back" style="	background-color: #007b5e !important;">
-                    <div class="card-body text-white" style="height:200px">
-                        <ul>
-                            <a href=""> <li>About Departments</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Arts & Rules</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>E-Services</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Contact Details</li> </a>
-                          </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
-            <div class="card card-flip h-100">
-                <div class="card-front text-white"  style="	background-color: brown;">
-                    <div class="card-body" style="height:200px" >
-                         <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
-                        <h5 class="card-title"> Department of Investment and Public Asset Managment</h5>
- <img src="https://finmin.nic.in/sites/default/files/box5-image.png" style="width:150px;height:100px"/>
-                      
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-                <div class="card-back bg-danger text-white">
-                    <div class="card-body" style="height:200px">
-                        <ul>
-                            <a href=""> <li>About Departments</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Disinvestment Policy </li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Investors</li> </a>
-                            <div class="dropdown-divider"></div>
-                            <a href=""> <li>Contact Details</li> </a>
-                          </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-       
-       
-    </div>
-</div>
+        .card-front {
+          transform: rotateY(0deg);
+        }
+        
+        .card-back {
+          transform: rotateY(180deg);
+          position: absolute;
+          top: 0;
+        }
+        
+        .card-flip:hover .card-front {
+          transform: rotateY(-180deg);
+        }
+          
+        .card-flip:hover .card-back {
+          transform: rotateY(0deg);
+        }
+        #body{
+      background-color:#ECECEC;
+    }
 
+    h5{
+        font-family: 'Times New Roman', Times, serif
+    }
+        
+        </style>
+
+<div id="body">
+        <br/>
+        <div class="container">
+                <h5  style="color:black">Departments</h5>
+                      
+                <hr style="background-color:grey;height:1px;margin:0px"/>          
+           
+            <div class="row">
+                     
+                <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+                    <div class="card card-flip h-100">
+                        <div class="card-front text-white " style="	background-color: #F35F2A;">
+                            <div class="card-body" style="height:200px">
+                                <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
+                             
+                                <img src="https://finmin.nic.in/sites/default/files/box1-image.png" style="width:120px;height:80px;margin-top: 4px;"/>
+                                <h5 class="card-title">  Department of <br/> Financial Services</h5>
+                            
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card-back  text-black" style="	background-color: #F35F2A;">
+                            <div class="card-body"  style="height:200px">
+                                <ul>
+                                    <a href=""> <li>About Departments</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Arts & Rules</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>PMJDY</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Notification</li> </a>
+                                   </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+                    <div class="card card-flip h-100">
+                        <div class="card-front text-white" style="	background-color: #258BDA;">
+                            <div class="card-body" style="height:200px">
+                                <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
+                           
+                                <img src="https://finmin.nic.in/sites/default/files/box4-image.png" style="width:120px;height:80px;margin-top: 4px"/>
+                                <h5 class="card-title"> Department of <br/> Revenue</h5>
+                               
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card-back" style="	background-color: #258BDA;">
+                            <div class="card-body text-white" style="height:200px">
+                                <ul>
+                                    <a href=""> <li>About Departments</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Arts & Rules</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>E-Services</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Contact Details</li> </a>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12" style="padding:5px">
+                    <div class="card card-flip h-100">
+                        <div class="card-front text-white"  style="	background-color: #F35F2A;">
+                            <div class="card-body" style="height:200px" >
+                                 <!-- <i class="fa fa-arrow-circle-right fa-5x float-right" style="font-size: 40px"></i> -->
+                            
+         <img src="https://finmin.nic.in/sites/default/files/box5-image.png" style="width:120px;height:80px;margin-top: 4px"/>
+         <h5 class="card-title"> Department of <br/> Investment and Public Asset Managment</h5> 
+              
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card-back text-white" style="background-color: #F35F2A;">
+                            <div class="card-body" style="height:200px">
+                                <ul>
+                                    <a href=""> <li>About Departments</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Disinvestment Policy </li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Investors</li> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href=""> <li>Contact Details</li> </a>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+               
+            </div>
+        </div>
+        
+        <br/>
+        </div>
 <app-partner></app-partner>
 
 

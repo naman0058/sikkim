@@ -19,6 +19,11 @@ import { PensionNotificationComponent } from "./pension-notification/pension-not
 import { PaoNotificationComponent } from "./pao-notification/pao-notification.component";
 import { DaComponent  } from "./da/da.component";
 import { TransferComponent } from "./transfer/transfer.component";
+import {DdoRegisterationComponent} from "./ddo-registeration/ddo-registeration.component";
+import {RcoRegisterationComponent} from "./rco-registeration/rco-registeration.component";
+import {ReceiptComponent} from "./receipt/receipt.component";
+import {AgReportComponent} from "./ag-report/ag-report.component";
+
 
 
 const routes: Routes = [
@@ -39,7 +44,14 @@ const routes: Routes = [
   {path : 'pao-notification' , component : PaoNotificationComponent},
   {path : 'letter' , component : LetterComponent},
   {path : 'DA-Enhancement' , component : DaComponent},
-  {path : 'transfer-and-promotion',component : TransferComponent}
+  {path : 'transfer-and-promotion',component : TransferComponent},
+  {path : 'DDO-Registeration',component : DdoRegisterationComponent},
+  {path : 'RCO-Registeration',component : RcoRegisterationComponent},
+  {path : 'ExpenditureReceipt-Login',component : ReceiptComponent},
+  {path : 'AG-Login' , component : AgReportComponent}
+  
+  
+
 ];
 
 @NgModule({

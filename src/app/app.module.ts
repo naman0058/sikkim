@@ -25,6 +25,10 @@ import { PensionNotificationComponent } from './pension-notification/pension-not
 import { PaoNotificationComponent } from './pao-notification/pao-notification.component';
 import { DaComponent } from './da/da.component';
 import { TransferComponent } from './transfer/transfer.component';
+import { DdoRegisterationComponent } from './ddo-registeration/ddo-registeration.component';
+import { RcoRegisterationComponent } from './rco-registeration/rco-registeration.component';
+import { ReceiptComponent } from './receipt/receipt.component';
+import { AgReportComponent } from './ag-report/ag-report.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { TransferComponent } from './transfer/transfer.component';
     PensionNotificationComponent,
     PaoNotificationComponent,
     DaComponent,
-    TransferComponent
+    TransferComponent,
+    DdoRegisterationComponent,
+    RcoRegisterationComponent,
+    ReceiptComponent,
+    AgReportComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,11 @@ import {DdoRegisterationComponent} from "./ddo-registeration/ddo-registeration.c
 import {RcoRegisterationComponent} from "./rco-registeration/rco-registeration.component";
 import {ReceiptComponent} from "./receipt/receipt.component";
 import {AgReportComponent} from "./ag-report/ag-report.component";
+import { AdminLoginComponent } from "./admin-login/admin-login.component";
+import {AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
+import { AddPdfComponent } from "./add-pdf/add-pdf.component";
+import {AddNotificationComponent  } from "./add-notification/add-notification.component";
+
 
 
 
@@ -48,8 +53,11 @@ const routes: Routes = [
   {path : 'DDO-Registeration',component : DdoRegisterationComponent},
   {path : 'RCO-Registeration',component : RcoRegisterationComponent},
   {path : 'ExpenditureReceipt-Login',component : ReceiptComponent},
-  {path : 'AG-Login' , component : AgReportComponent}
-  
+  {path : 'AG-Login' , component : AgReportComponent},
+  {path:'Admin-Login',component:AdminLoginComponent},
+  {path:'Admin-Dashboard',component:AdminDashboardComponent},
+  {path:'New-Pdf',component:AddPdfComponent},
+  {path:'New-Notification',component:AddNotificationComponent}
   
 
 ];

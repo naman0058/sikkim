@@ -29,6 +29,10 @@ import { DdoRegisterationComponent } from './ddo-registeration/ddo-registeration
 import { RcoRegisterationComponent } from './rco-registeration/rco-registeration.component';
 import { ReceiptComponent } from './receipt/receipt.component';
 import { AgReportComponent } from './ag-report/ag-report.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AddPdfComponent } from './add-pdf/add-pdf.component';
+import { AddNotificationComponent } from './add-notification/add-notification.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +62,11 @@ import { AgReportComponent } from './ag-report/ag-report.component';
     DdoRegisterationComponent,
     RcoRegisterationComponent,
     ReceiptComponent,
-    AgReportComponent
+    AgReportComponent,
+    AdminLoginComponent,
+    AddPdfComponent,
+    AddNotificationComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,

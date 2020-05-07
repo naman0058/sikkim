@@ -36,6 +36,1581 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/add-notification/add-notification.component.ts":
+  /*!****************************************************************!*\
+    !*** ./src/app/add-notification/add-notification.component.ts ***!
+    \****************************************************************/
+
+  /*! exports provided: AddNotificationComponent */
+
+  /***/
+  function srcAppAddNotificationAddNotificationComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddNotificationComponent", function () {
+      return AddNotificationComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+    var _c0 = function _c0() {
+      return ["/Admin-Dashboard"];
+    };
+
+    var _c1 = function _c1() {
+      return ["/New-Pdf"];
+    };
+
+    var _c2 = function _c2() {
+      return ["/New-Notification"];
+    };
+
+    var AddNotificationComponent =
+    /*#__PURE__*/
+    function () {
+      function AddNotificationComponent() {
+        _classCallCheck(this, AddNotificationComponent);
+      }
+
+      _createClass(AddNotificationComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AddNotificationComponent;
+    }();
+
+    AddNotificationComponent.ɵfac = function AddNotificationComponent_Factory(t) {
+      return new (t || AddNotificationComponent)();
+    };
+
+    AddNotificationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AddNotificationComponent,
+      selectors: [["app-add-notification"]],
+      decls: 110,
+      vars: 6,
+      consts: [["id", "mainNav", 1, "navbar", "navbar-expand-lg", "navbar-dark", "bg-dark", "fixed-top"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarResponsive", "aria-controls", "navbarResponsive", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", "navbar-toggler-right"], [1, "navbar-toggler-icon"], ["id", "navbarResponsive", 1, "collapse", "navbar-collapse"], ["id", "exampleAccordion", 1, "navbar-nav", "navbar-sidenav"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Dashboard", 1, "nav-item"], [1, "nav-link", 3, "routerLink"], [1, "fa", "fa-fw", "fa-dashboard"], [1, "nav-link-text"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Charts", 1, "nav-item"], [1, "fa", "fa-fw", "fa-area-chart"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Tables", 1, "nav-item"], [1, "navbar-nav", "sidenav-toggler"], [1, "nav-item"], ["id", "sidenavToggler", 1, "nav-link", "text-center"], [1, "content-wrapper"], [1, "container-fluid"], [1, "row"], [1, "col-xl-3", "col-sm-6", "mb-3"], [1, "card", "text-white", "bg-primary", "o-hidden", "h-100"], [1, "card-body"], [1, "card-body-icon"], [1, "fa", "fa-fw", "fa-comments"], [1, "mr-5"], ["href", "#", 1, "card-footer", "text-white", "clearfix", "small", "z-1"], [1, "float-left"], [1, "float-right"], [1, "fa", "fa-angle-right"], [1, "card", "text-white", "bg-warning", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-list"], [1, "card", "text-white", "bg-success", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-shopping-cart"], [1, "card", "text-white", "bg-danger", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-support"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], ["name", "", "id", "", 1, "form-control"], ["type", "file", 1, "form-control"], [1, "modal-footer"], [1, "btn", "btn-primary", 2, "color", "white"]],
+      template: function AddNotificationComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nav", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "span", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "ul", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "li", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Dashboard");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "i", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "New PDF");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "li", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "New Notifications");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "ul", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "li", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Logout ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "i", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "26 New Messages!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "i", 29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "11 New Tasks!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 30);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "i", 31);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "123 New Orders!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](66, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "div", 32);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "i", 33);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "13 New Tickets!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 34);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 35);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 36);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "i", 37);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, " New Notification");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "select", 38);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "Choose Category");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "Rules");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "Gazzette");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "Budget");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "select", 38);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "Choose Year");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, "2020-2019");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "2019-2018");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "2018-2017");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](105, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](106, "input", 39);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "div", 40);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "a", 41);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Save");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
+        }
+      },
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZC1ub3RpZmljYXRpb24vYWRkLW5vdGlmaWNhdGlvbi5jb21wb25lbnQuY3NzIn0= */", "body.sticky-footer[_ngcontent-%COMP%] {\n  margin-bottom: 56px;\n}\n\nbody.sticky-footer[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px - 56px);\n}\n\nbody.fixed-nav[_ngcontent-%COMP%] {\n  padding-top: 56px;\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px);\n  padding-top: 1rem;\n}\n\n.scroll-to-top[_ngcontent-%COMP%] {\n  position: fixed;\n  right: 15px;\n  bottom: 3px;\n  display: none;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  color: white;\n  background: rgba(52, 58, 64, 0.5);\n  line-height: 45px;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:focus, .scroll-to-top[_ngcontent-%COMP%]:hover {\n  color: white;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:hover {\n  background: #343a40;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.smaller[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n}\n\n.o-hidden[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n\n.z-0[_ngcontent-%COMP%] {\n  z-index: 0;\n}\n\n.z-1[_ngcontent-%COMP%] {\n  z-index: 1;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n  overflow: auto;\n  max-height: 75vh;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  float: right;\n  content: '\\f107';\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse.collapsed[_ngcontent-%COMP%]:after {\n  content: '\\f105';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n  padding-left: 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  display: block;\n  padding: 0.5em 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 1em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 2em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  position: relative;\n  min-width: 45px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  float: right;\n  width: auto;\n  content: '\\f105';\n  border: none;\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]   .indicator[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 5px;\n  left: 21px;\n  font-size: 10px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown.show[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  content: '\\f107';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n  overflow: hidden;\n  max-width: none;\n  text-overflow: ellipsis;\n}\n\n@media (min-width: 992px) {\n  #mainNav[_ngcontent-%COMP%]   .navbar-brand[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n    overflow: visible;\n    max-height: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: 56px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    padding-left: 0;\n    list-style: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 2.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 3.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    min-width: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n    width: 24px;\n    text-align: center;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n    max-width: 300px;\n  }\n}\n\n#mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    height: calc(100vh - 112px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: calc(100vh - 56px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #212529;\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: #adb5bd;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #dee2e6;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n#mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    display: flex;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.static-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  background: white;\n}\n\n@media (min-width: 992px) {\n  .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 250px;\n  }\n}\n\n#sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 55px;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-text[_ngcontent-%COMP%] {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]:after, body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%]:after {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%] {\n  white-space: nowrap;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: #adb5bd;\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white !important;\n    background-color: #495057;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: white;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #000 !important;\n    background-color: #e9ecef;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: #000;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n}\n\n.card-body-icon[_ngcontent-%COMP%] {\n  position: absolute;\n  z-index: 0;\n  top: -25px;\n  right: -25px;\n  font-size: 5rem;\n  -webkit-transform: rotate(15deg);\n  -ms-transform: rotate(15deg);\n  transform: rotate(15deg);\n}\n\n@media (min-width: 576px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 1;\n  }\n}\n\n@media (min-width: 768px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n@media (min-width: 1200px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n.card-login[_ngcontent-%COMP%] {\n  max-width: 25rem;\n}\n\n.card-register[_ngcontent-%COMP%] {\n  max-width: 40rem;\n}\n\nfooter.sticky-footer[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  width: 100%;\n  height: 56px;\n  background-color: #e9ecef;\n  line-height: 55px;\n}\n\n@media (min-width: 992px) {\n  footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 250px);\n  }\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 55px);\n  }\n}"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddNotificationComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-add-notification',
+          templateUrl: './add-notification.component.html',
+          styleUrls: ['./add-notification.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/add-pdf/add-pdf.component.ts":
+  /*!**********************************************!*\
+    !*** ./src/app/add-pdf/add-pdf.component.ts ***!
+    \**********************************************/
+
+  /*! exports provided: AddPdfComponent */
+
+  /***/
+  function srcAppAddPdfAddPdfComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddPdfComponent", function () {
+      return AddPdfComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+    var _c0 = function _c0() {
+      return ["/Admin-Dashboard"];
+    };
+
+    var _c1 = function _c1() {
+      return ["/New-Pdf"];
+    };
+
+    var _c2 = function _c2() {
+      return ["/New-Notification"];
+    };
+
+    var AddPdfComponent =
+    /*#__PURE__*/
+    function () {
+      function AddPdfComponent() {
+        _classCallCheck(this, AddPdfComponent);
+      }
+
+      _createClass(AddPdfComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AddPdfComponent;
+    }();
+
+    AddPdfComponent.ɵfac = function AddPdfComponent_Factory(t) {
+      return new (t || AddPdfComponent)();
+    };
+
+    AddPdfComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AddPdfComponent,
+      selectors: [["app-add-pdf"]],
+      decls: 98,
+      vars: 6,
+      consts: [["id", "mainNav", 1, "navbar", "navbar-expand-lg", "navbar-dark", "bg-dark", "fixed-top"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarResponsive", "aria-controls", "navbarResponsive", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", "navbar-toggler-right"], [1, "navbar-toggler-icon"], ["id", "navbarResponsive", 1, "collapse", "navbar-collapse"], ["id", "exampleAccordion", 1, "navbar-nav", "navbar-sidenav"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Dashboard", 1, "nav-item"], [1, "nav-link", 3, "routerLink"], [1, "fa", "fa-fw", "fa-dashboard"], [1, "nav-link-text"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Charts", 1, "nav-item"], [1, "fa", "fa-fw", "fa-area-chart"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Tables", 1, "nav-item"], [1, "navbar-nav", "sidenav-toggler"], [1, "nav-item"], ["id", "sidenavToggler", 1, "nav-link", "text-center"], [1, "content-wrapper"], [1, "container-fluid"], [1, "row"], [1, "col-xl-3", "col-sm-6", "mb-3"], [1, "card", "text-white", "bg-primary", "o-hidden", "h-100"], [1, "card-body"], [1, "card-body-icon"], [1, "fa", "fa-fw", "fa-comments"], [1, "mr-5"], ["href", "#", 1, "card-footer", "text-white", "clearfix", "small", "z-1"], [1, "float-left"], [1, "float-right"], [1, "fa", "fa-angle-right"], [1, "card", "text-white", "bg-warning", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-list"], [1, "card", "text-white", "bg-success", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-shopping-cart"], [1, "card", "text-white", "bg-danger", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-support"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], ["name", "", "id", "", 1, "form-control"], ["type", "file", 1, "form-control"], [1, "modal-footer"], [1, "btn", "btn-primary", 2, "color", "white"]],
+      template: function AddPdfComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nav", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "span", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "ul", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "li", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Dashboard");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "i", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "New PDF");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "li", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "New Notifications");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "ul", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "li", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Logout ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "i", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "26 New Messages!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "i", 29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "11 New Tasks!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 30);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "i", 31);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "123 New Orders!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](66, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "div", 32);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "i", 33);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "13 New Tickets!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 34);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 35);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 36);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "i", 37);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, " New Pdf");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "select", 38);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "Choose Category");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "Quick Links");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "News & Press Realease");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](93, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](94, "input", 39);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "div", 40);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "a", 41);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "Save");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
+        }
+      },
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZC1wZGYvYWRkLXBkZi5jb21wb25lbnQuY3NzIn0= */", "body.sticky-footer[_ngcontent-%COMP%] {\n  margin-bottom: 56px;\n}\n\nbody.sticky-footer[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px - 56px);\n}\n\nbody.fixed-nav[_ngcontent-%COMP%] {\n  padding-top: 56px;\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px);\n  padding-top: 1rem;\n}\n\n.scroll-to-top[_ngcontent-%COMP%] {\n  position: fixed;\n  right: 15px;\n  bottom: 3px;\n  display: none;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  color: white;\n  background: rgba(52, 58, 64, 0.5);\n  line-height: 45px;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:focus, .scroll-to-top[_ngcontent-%COMP%]:hover {\n  color: white;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:hover {\n  background: #343a40;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.smaller[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n}\n\n.o-hidden[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n\n.z-0[_ngcontent-%COMP%] {\n  z-index: 0;\n}\n\n.z-1[_ngcontent-%COMP%] {\n  z-index: 1;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n  overflow: auto;\n  max-height: 75vh;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  float: right;\n  content: '\\f107';\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse.collapsed[_ngcontent-%COMP%]:after {\n  content: '\\f105';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n  padding-left: 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  display: block;\n  padding: 0.5em 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 1em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 2em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  position: relative;\n  min-width: 45px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  float: right;\n  width: auto;\n  content: '\\f105';\n  border: none;\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]   .indicator[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 5px;\n  left: 21px;\n  font-size: 10px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown.show[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  content: '\\f107';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n  overflow: hidden;\n  max-width: none;\n  text-overflow: ellipsis;\n}\n\n@media (min-width: 992px) {\n  #mainNav[_ngcontent-%COMP%]   .navbar-brand[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n    overflow: visible;\n    max-height: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: 56px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    padding-left: 0;\n    list-style: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 2.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 3.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    min-width: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n    width: 24px;\n    text-align: center;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n    max-width: 300px;\n  }\n}\n\n#mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    height: calc(100vh - 112px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: calc(100vh - 56px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #212529;\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: #adb5bd;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #dee2e6;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n#mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    display: flex;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.static-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  background: white;\n}\n\n@media (min-width: 992px) {\n  .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 250px;\n  }\n}\n\n#sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 55px;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-text[_ngcontent-%COMP%] {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]:after, body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%]:after {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%] {\n  white-space: nowrap;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: #adb5bd;\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white !important;\n    background-color: #495057;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: white;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #000 !important;\n    background-color: #e9ecef;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: #000;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n}\n\n.card-body-icon[_ngcontent-%COMP%] {\n  position: absolute;\n  z-index: 0;\n  top: -25px;\n  right: -25px;\n  font-size: 5rem;\n  -webkit-transform: rotate(15deg);\n  -ms-transform: rotate(15deg);\n  transform: rotate(15deg);\n}\n\n@media (min-width: 576px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 1;\n  }\n}\n\n@media (min-width: 768px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n@media (min-width: 1200px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n.card-login[_ngcontent-%COMP%] {\n  max-width: 25rem;\n}\n\n.card-register[_ngcontent-%COMP%] {\n  max-width: 40rem;\n}\n\nfooter.sticky-footer[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  width: 100%;\n  height: 56px;\n  background-color: #e9ecef;\n  line-height: 55px;\n}\n\n@media (min-width: 992px) {\n  footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 250px);\n  }\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 55px);\n  }\n}"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddPdfComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-add-pdf',
+          templateUrl: './add-pdf.component.html',
+          styleUrls: ['./add-pdf.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/admin-dashboard/admin-dashboard.component.ts":
+  /*!**************************************************************!*\
+    !*** ./src/app/admin-dashboard/admin-dashboard.component.ts ***!
+    \**************************************************************/
+
+  /*! exports provided: AdminDashboardComponent */
+
+  /***/
+  function srcAppAdminDashboardAdminDashboardComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminDashboardComponent", function () {
+      return AdminDashboardComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+    var _c0 = function _c0() {
+      return ["/Admin-Dashboard"];
+    };
+
+    var _c1 = function _c1() {
+      return ["/New-Pdf"];
+    };
+
+    var _c2 = function _c2() {
+      return ["/New-Notification"];
+    };
+
+    var AdminDashboardComponent =
+    /*#__PURE__*/
+    function () {
+      function AdminDashboardComponent() {
+        _classCallCheck(this, AdminDashboardComponent);
+      }
+
+      _createClass(AdminDashboardComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AdminDashboardComponent;
+    }();
+
+    AdminDashboardComponent.ɵfac = function AdminDashboardComponent_Factory(t) {
+      return new (t || AdminDashboardComponent)();
+    };
+
+    AdminDashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AdminDashboardComponent,
+      selectors: [["app-admin-dashboard"]],
+      decls: 125,
+      vars: 6,
+      consts: [["id", "mainNav", 1, "navbar", "navbar-expand-lg", "navbar-dark", "bg-dark", "fixed-top"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarResponsive", "aria-controls", "navbarResponsive", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", "navbar-toggler-right"], [1, "navbar-toggler-icon"], ["id", "navbarResponsive", 1, "collapse", "navbar-collapse"], ["id", "exampleAccordion", 1, "navbar-nav", "navbar-sidenav"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Dashboard", 1, "nav-item"], [1, "nav-link", 3, "routerLink"], [1, "fa", "fa-fw", "fa-dashboard"], [1, "nav-link-text"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Charts", 1, "nav-item"], [1, "fa", "fa-fw", "fa-area-chart"], ["data-toggle", "tooltip", "data-placement", "right", "title", "Tables", 1, "nav-item"], [1, "navbar-nav", "sidenav-toggler"], [1, "nav-item"], ["id", "sidenavToggler", 1, "nav-link", "text-center"], [1, "content-wrapper"], [1, "container-fluid"], [1, "row"], [1, "col-xl-3", "col-sm-6", "mb-3"], [1, "card", "text-white", "bg-primary", "o-hidden", "h-100"], [1, "card-body"], [1, "card-body-icon"], [1, "fa", "fa-fw", "fa-comments"], [1, "mr-5"], ["href", "#", 1, "card-footer", "text-white", "clearfix", "small", "z-1"], [1, "float-left"], [1, "float-right"], [1, "fa", "fa-angle-right"], [1, "card", "text-white", "bg-warning", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-list"], [1, "card", "text-white", "bg-success", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-shopping-cart"], [1, "card", "text-white", "bg-danger", "o-hidden", "h-100"], [1, "fa", "fa-fw", "fa-support"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "table-responsive"], ["id", "dataTable", "width", "100%", "cellspacing", "0", 1, "table", "table-bordered"], [1, "btn", "btn-success"], [1, "btn", "btn-danger"], [1, "sticky-footer"], [1, "container"], [1, "text-center"], ["href", "#page-top", 1, "scroll-to-top", "rounded"], [1, "fa", "fa-angle-up"]],
+      template: function AdminDashboardComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nav", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "span", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "ul", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "li", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Dashboard");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "i", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "New PDF");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "li", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "i", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "New Notifications");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "ul", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "li", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Logout ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "i", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "26 New Messages!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "i", 29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "11 New Tasks!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 30);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "i", 31);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "123 New Orders!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](66, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "div", 32);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "i", 33);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "div", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "13 New Tickets!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "View Details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "span", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 34);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 35);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 36);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "i", 37);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, " DDO Rqquest");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "div", 38);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "table", 39);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "thead");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "tr");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "Name");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "Email ID");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "Mobile Number");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "Age");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, "Accept");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "th");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Decline");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "tbody");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "tr");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, "Tiger Nixon");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "System Architect");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "1234567890");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](111, "61");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "button", 40);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "Accept");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "td");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "button", 41);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "Decline");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "footer", 42);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "div", 43);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "div", 44);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "small");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "Copyright \xA9 Your Website 2018");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "a", 45);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](124, "i", 46);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
+        }
+      },
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLWRhc2hib2FyZC9hZG1pbi1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJ9 */", "body.sticky-footer[_ngcontent-%COMP%] {\n  margin-bottom: 56px;\n}\n\nbody.sticky-footer[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px - 56px);\n}\n\nbody.fixed-nav[_ngcontent-%COMP%] {\n  padding-top: 56px;\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  min-height: calc(100vh - 56px);\n  padding-top: 1rem;\n}\n\n.scroll-to-top[_ngcontent-%COMP%] {\n  position: fixed;\n  right: 15px;\n  bottom: 3px;\n  display: none;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  color: white;\n  background: rgba(52, 58, 64, 0.5);\n  line-height: 45px;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:focus, .scroll-to-top[_ngcontent-%COMP%]:hover {\n  color: white;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]:hover {\n  background: #343a40;\n}\n\n.scroll-to-top[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.smaller[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n}\n\n.o-hidden[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n\n.z-0[_ngcontent-%COMP%] {\n  z-index: 0;\n}\n\n.z-1[_ngcontent-%COMP%] {\n  z-index: 1;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n  overflow: auto;\n  max-height: 75vh;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  float: right;\n  content: '\\f107';\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse.collapsed[_ngcontent-%COMP%]:after {\n  content: '\\f105';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n  padding-left: 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  display: block;\n  padding: 0.5em 0;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 1em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding-left: 2em;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  position: relative;\n  min-width: 45px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  float: right;\n  width: auto;\n  content: '\\f105';\n  border: none;\n  font-family: 'FontAwesome';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]   .indicator[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 5px;\n  left: 21px;\n  font-size: 10px;\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown.show[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  content: '\\f107';\n}\n\n#mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n  overflow: hidden;\n  max-width: none;\n  text-overflow: ellipsis;\n}\n\n@media (min-width: 992px) {\n  #mainNav[_ngcontent-%COMP%]   .navbar-brand[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%] {\n    overflow: visible;\n    max-height: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: 56px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    padding-left: 0;\n    list-style: none;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n    width: 250px;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 2.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding-left: 3.75em;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    min-width: 0;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n    width: 24px;\n    text-align: center;\n  }\n  #mainNav[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]    > .dropdown-item[_ngcontent-%COMP%]    > .dropdown-message[_ngcontent-%COMP%] {\n    max-width: 300px;\n  }\n}\n\n#mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    height: calc(100vh - 112px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    margin-top: calc(100vh - 56px);\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%] {\n    width: 250px;\n    padding: 0;\n  }\n  #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n    padding: 1em;\n  }\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #212529;\n}\n\n#mainNav.fixed-top.navbar-dark[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: #adb5bd;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  background-color: #dee2e6;\n}\n\n#mainNav.fixed-top.navbar-light[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.fixed-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n#mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  #mainNav.static-top[_ngcontent-%COMP%]   .sidenav-toggler[_ngcontent-%COMP%] {\n    display: flex;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   #mainNav.static-top[_ngcontent-%COMP%]   #sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  -webkit-transform: scaleX(-1);\n  -moz-transform: scaleX(-1);\n  -o-transform: scaleX(-1);\n  transform: scaleX(-1);\n  filter: FlipH;\n  -ms-filter: 'FlipH';\n}\n\n.content-wrapper[_ngcontent-%COMP%] {\n  overflow-x: hidden;\n  background: white;\n}\n\n@media (min-width: 992px) {\n  .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 250px;\n  }\n}\n\n#sidenavToggler[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-weight: 800;\n}\n\n.navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: none;\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   .content-wrapper[_ngcontent-%COMP%] {\n    margin-left: 55px;\n  }\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n  width: 55px;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-text[_ngcontent-%COMP%] {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%], body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%] {\n  width: 55px !important;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]:after, body.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link[_ngcontent-%COMP%]:after {\n  display: none;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%] {\n  white-space: nowrap;\n}\n\nbody.sidenav-toggled[_ngcontent-%COMP%]   .navbar-sidenav-tooltip.show[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: #868e96;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: #adb5bd;\n}\n\n#mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: #adb5bd;\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white !important;\n    background-color: #495057;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: white;\n  }\n  #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-dark[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #343a40;\n  }\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   .nav-link-collapse[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%]:hover {\n  color: rgba(0, 0, 0, 0.7);\n}\n\n#mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-nav[_ngcontent-%COMP%]    > .nav-item.dropdown[_ngcontent-%COMP%]    > .nav-link[_ngcontent-%COMP%]:after {\n  color: rgba(0, 0, 0, 0.5);\n}\n\n@media (min-width: 992px) {\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #000 !important;\n    background-color: #e9ecef;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:focus, #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: #000;\n  }\n  #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-second-level[_ngcontent-%COMP%], #mainNav.navbar-light[_ngcontent-%COMP%]   .navbar-collapse[_ngcontent-%COMP%]   .navbar-sidenav[_ngcontent-%COMP%]    > .nav-item[_ngcontent-%COMP%]   .sidenav-third-level[_ngcontent-%COMP%] {\n    background: #f8f9fa;\n  }\n}\n\n.card-body-icon[_ngcontent-%COMP%] {\n  position: absolute;\n  z-index: 0;\n  top: -25px;\n  right: -25px;\n  font-size: 5rem;\n  -webkit-transform: rotate(15deg);\n  -ms-transform: rotate(15deg);\n  transform: rotate(15deg);\n}\n\n@media (min-width: 576px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 1;\n  }\n}\n\n@media (min-width: 768px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n@media (min-width: 1200px) {\n  .card-columns[_ngcontent-%COMP%] {\n    column-count: 2;\n  }\n}\n\n.card-login[_ngcontent-%COMP%] {\n  max-width: 25rem;\n}\n\n.card-register[_ngcontent-%COMP%] {\n  max-width: 40rem;\n}\n\nfooter.sticky-footer[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  width: 100%;\n  height: 56px;\n  background-color: #e9ecef;\n  line-height: 55px;\n}\n\n@media (min-width: 992px) {\n  footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 250px);\n  }\n}\n\n@media (min-width: 992px) {\n  body.sidenav-toggled[_ngcontent-%COMP%]   footer.sticky-footer[_ngcontent-%COMP%] {\n    width: calc(100% - 55px);\n  }\n}"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AdminDashboardComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-admin-dashboard',
+          templateUrl: './admin-dashboard.component.html',
+          styleUrls: ['./admin-dashboard.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/admin-login/admin-login.component.ts":
+  /*!******************************************************!*\
+    !*** ./src/app/admin-login/admin-login.component.ts ***!
+    \******************************************************/
+
+  /*! exports provided: AdminLoginComponent */
+
+  /***/
+  function srcAppAdminLoginAdminLoginComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminLoginComponent", function () {
+      return AdminLoginComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var AdminLoginComponent =
+    /*#__PURE__*/
+    function () {
+      function AdminLoginComponent() {
+        _classCallCheck(this, AdminLoginComponent);
+      }
+
+      _createClass(AdminLoginComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AdminLoginComponent;
+    }();
+
+    AdminLoginComponent.ɵfac = function AdminLoginComponent_Factory(t) {
+      return new (t || AdminLoginComponent)();
+    };
+
+    AdminLoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AdminLoginComponent,
+      selectors: [["app-admin-login"]],
+      decls: 28,
+      vars: 0,
+      consts: [[1, "container"], [1, "row", "justify-content-center"], [1, "col-sm-12", "col-md-12", "col-lg-5", "pb-5"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["type", "email", "id", "email", "name", "email", "placeholder", "Enter Username", "required", "", 1, "form-control"], ["type", "number", "id", "email", "name", "email", "placeholder", "Enter Password", "required", "", 1, "form-control"], [1, "text-center"], ["type", "submit", "value", "Login", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
+      template: function AdminLoginComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "form", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h3");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " Admin Login");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Username ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "input", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Password ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "span", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "input", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "input", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLWxvZ2luL2FkbWluLWxvZ2luLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AdminLoginComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-admin-login',
+          templateUrl: './admin-login.component.html',
+          styleUrls: ['./admin-login.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/ag-report/ag-report.component.ts":
   /*!**************************************************!*\
     !*** ./src/app/ag-report/ag-report.component.ts ***!
@@ -402,6 +1977,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ./ag-report/ag-report.component */
     "./src/app/ag-report/ag-report.component.ts");
+    /* harmony import */
+
+
+    var _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    /*! ./admin-login/admin-login.component */
+    "./src/app/admin-login/admin-login.component.ts");
+    /* harmony import */
+
+
+    var _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! ./admin-dashboard/admin-dashboard.component */
+    "./src/app/admin-dashboard/admin-dashboard.component.ts");
+    /* harmony import */
+
+
+    var _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./add-pdf/add-pdf.component */
+    "./src/app/add-pdf/add-pdf.component.ts");
+    /* harmony import */
+
+
+    var _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    /*! ./add-notification/add-notification.component */
+    "./src/app/add-notification/add-notification.component.ts");
 
     var routes = [{
       path: 'home',
@@ -470,6 +2069,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: 'AG-Login',
       component: _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_22__["AgReportComponent"]
+    }, {
+      path: 'Admin-Login',
+      component: _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_23__["AdminLoginComponent"]
+    }, {
+      path: 'Admin-Dashboard',
+      component: _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["AdminDashboardComponent"]
+    }, {
+      path: 'New-Pdf',
+      component: _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_25__["AddPdfComponent"]
+    }, {
+      path: 'New-Notification',
+      component: _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_26__["AddNotificationComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -794,6 +2405,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! ./ag-report/ag-report.component */
     "./src/app/ag-report/ag-report.component.ts");
+    /* harmony import */
+
+
+    var _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    /*! ./admin-login/admin-login.component */
+    "./src/app/admin-login/admin-login.component.ts");
+    /* harmony import */
+
+
+    var _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    /*! ./add-pdf/add-pdf.component */
+    "./src/app/add-pdf/add-pdf.component.ts");
+    /* harmony import */
+
+
+    var _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    /*! ./add-notification/add-notification.component */
+    "./src/app/add-notification/add-notification.component.ts");
+    /* harmony import */
+
+
+    var _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    /*! ./admin-dashboard/admin-dashboard.component */
+    "./src/app/admin-dashboard/admin-dashboard.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -813,7 +2448,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]]
       });
     })();
@@ -824,7 +2459,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -5920,6 +7555,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return ["/contactus"];
     };
 
+    var _c12 = function _c12() {
+      return ["/Admin-Login"];
+    };
+
+    var _c13 = function _c13() {
+      return ["/DDO-Registeration"];
+    };
+
+    var _c14 = function _c14() {
+      return ["/RCO-Registeration"];
+    };
+
+    var _c15 = function _c15() {
+      return ["/ExpenditureReceipt-Login"];
+    };
+
+    var _c16 = function _c16() {
+      return ["/AG-Login"];
+    };
+
     var NavbarComponent =
     /*#__PURE__*/
     function () {
@@ -5942,9 +7597,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NavbarComponent,
       selectors: [["app-navbar"]],
-      decls: 146,
-      vars: 48,
-      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], ["href", "#"], ["src", "./assets/logo1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://www.sikkimtax.gov.in/", 1, "dropdown-item"], ["href", "http://sikkimlotteries.com/", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], ["href", "", 1, "dropdown-item"], [1, "form-inline", "my-2", "my-lg-0"], [1, "search__wrapper"], ["type", "text", "name", "", "placeholder", "Search for...", 1, "search__field", "form-control"], ["type", "submit", 1, "fa", "fa-search", "search__icon"], [2, "background-color", "#36DAEA", "height", "4px", "margin", "0px"]],
+      decls: 155,
+      vars: 58,
+      consts: [[1, "container-fluid"], [1, "row"], [1, "col-lg-12", "col-md-12", "col-sm-12", "col-xs-12", 2, "padding", "0px"], ["href", "#"], ["src", "./assets/logo1.png", "alt", "img", 2, "width", "100%", "background-color", "black"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "brown"], [1, "navbar-brand", 2, "color", "white", 3, "routerLink"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://www.sikkimtax.gov.in/", 1, "dropdown-item"], ["href", "http://sikkimlotteries.com/", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], [1, "form-inline", "my-2", "my-lg-0"], [1, "search__wrapper"], ["type", "text", "name", "", "placeholder", "Search for...", 1, "search__field", "form-control"], ["type", "submit", 1, "fa", "fa-search", "search__icon"], [2, "background-color", "#36DAEA", "height", "4px", "margin", "0px"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -6325,17 +7980,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "a", 27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "a", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "Registeration");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "Login");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](138, "div", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "a", 27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "a", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "Login");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "DDO Registeration");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](141, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](143, "MIS/HOD/RCO User Registration");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](144, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "Receipt And Payment Report");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](147, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "a", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149, "Reports For AG");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -6345,15 +8024,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "form", 28);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "form", 27);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "div", 29);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "div", 28);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "input", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](152, "input", 29);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](144, "button", 31);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](153, "button", 30);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -6367,37 +8044,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](145, "hr", 32);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](154, "hr", 31);
         }
 
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](24, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](29, _c0));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](25, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](26, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](27, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](28, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](29, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](30, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](30, _c0));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
@@ -6411,13 +8070,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](33, _c0));
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](34, _c2));
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](35, _c3));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](34, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](35, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
@@ -6425,19 +8084,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](37, _c4));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](37, _c0));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](38, _c0));
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](39, _c2));
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](39, _c0));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](40, _c5));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](40, _c3));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
@@ -6445,27 +8104,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](42, _c6));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](42, _c4));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](43, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](44, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](45, _c5));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](46, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](47, _c6));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](43, _c7));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](48, _c7));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](44, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](49, _c8));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](45, _c9));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](50, _c9));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](46, _c10));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](51, _c10));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](33);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](47, _c11));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](52, _c11));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](53, _c12));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](54, _c13));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](55, _c14));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](56, _c15));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](57, _c16));
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],

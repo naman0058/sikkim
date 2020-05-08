@@ -27,6 +27,7 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
 import {AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
 import { AddPdfComponent } from "./add-pdf/add-pdf.component";
 import {AddNotificationComponent  } from "./add-notification/add-notification.component";
+import {AboutDepartmentComponent} from "./about-department/about-department.component"
 
 
 
@@ -57,7 +58,8 @@ const routes: Routes = [
   {path:'Admin-Login',component:AdminLoginComponent},
   {path:'Admin-Dashboard',component:AdminDashboardComponent},
   {path:'New-Pdf',component:AddPdfComponent},
-  {path:'New-Notification',component:AddNotificationComponent}
+  {path:'New-Notification',component:AddNotificationComponent},
+  {path:'about-department',component:AboutDepartmentComponent}
   
 
 ];

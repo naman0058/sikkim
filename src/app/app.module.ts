@@ -33,6 +33,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AddPdfComponent } from './add-pdf/add-pdf.component';
 import { AddNotificationComponent } from './add-notification/add-notification.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AboutDepartmentComponent } from './about-department/about-department.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     AdminLoginComponent,
     AddPdfComponent,
     AddNotificationComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    AboutDepartmentComponent
   ],
   imports: [
     BrowserModule,

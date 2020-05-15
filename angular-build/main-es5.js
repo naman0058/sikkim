@@ -2965,6 +2965,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! ./about-department/about-department.component */
     "./src/app/about-department/about-department.component.ts");
+    /* harmony import */
+
+
+    var _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    /*! ./rco-report/rco-report.component */
+    "./src/app/rco-report/rco-report.component.ts");
+    /* harmony import */
+
+
+    var _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    /*! ./feedback-report/feedback-report.component */
+    "./src/app/feedback-report/feedback-report.component.ts");
 
     var routes = [{
       path: 'home',
@@ -3048,6 +3060,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: 'about-department',
       component: _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_27__["AboutDepartmentComponent"]
+    }, {
+      path: 'rco-report',
+      component: _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_28__["RcoReportComponent"]
+    }, {
+      path: 'feedback-report',
+      component: _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_29__["FeedbackReportComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {

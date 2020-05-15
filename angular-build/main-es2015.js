@@ -1386,6 +1386,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./add-pdf/add-pdf.component */ "./src/app/add-pdf/add-pdf.component.ts");
 /* harmony import */ var _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./add-notification/add-notification.component */ "./src/app/add-notification/add-notification.component.ts");
 /* harmony import */ var _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./about-department/about-department.component */ "./src/app/about-department/about-department.component.ts");
+/* harmony import */ var _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./rco-report/rco-report.component */ "./src/app/rco-report/rco-report.component.ts");
+/* harmony import */ var _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./feedback-report/feedback-report.component */ "./src/app/feedback-report/feedback-report.component.ts");
+
+
 
 
 
@@ -1443,7 +1447,9 @@ const routes = [
     { path: 'Admin-Dashboard', component: _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["AdminDashboardComponent"] },
     { path: 'New-Pdf', component: _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_25__["AddPdfComponent"] },
     { path: 'New-Notification', component: _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_26__["AddNotificationComponent"] },
-    { path: 'about-department', component: _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_27__["AboutDepartmentComponent"] }
+    { path: 'about-department', component: _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_27__["AboutDepartmentComponent"] },
+    { path: 'rco-report', component: _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_28__["RcoReportComponent"] },
+    { path: 'feedback-report', component: _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_29__["FeedbackReportComponent"] }
 ];
 class AppRoutingModule {
 }

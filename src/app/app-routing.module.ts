@@ -27,7 +27,9 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
 import {AdminDashboardComponent} from "./admin-dashboard/admin-dashboard.component";
 import { AddPdfComponent } from "./add-pdf/add-pdf.component";
 import {AddNotificationComponent  } from "./add-notification/add-notification.component";
-import {AboutDepartmentComponent} from "./about-department/about-department.component"
+import {AboutDepartmentComponent} from "./about-department/about-department.component";
+import {RcoReportComponent} from "./rco-report/rco-report.component";
+import {FeedbackReportComponent} from "./feedback-report/feedback-report.component"
 
 
 
@@ -59,7 +61,9 @@ const routes: Routes = [
   {path:'Admin-Dashboard',component:AdminDashboardComponent},
   {path:'New-Pdf',component:AddPdfComponent},
   {path:'New-Notification',component:AddNotificationComponent},
-  {path:'about-department',component:AboutDepartmentComponent}
+  {path:'about-department',component:AboutDepartmentComponent},
+  {path : 'rco-report',component:RcoReportComponent},
+  {path : 'feedback-report' , component:FeedbackReportComponent}
   
 
 ];

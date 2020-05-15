@@ -63,7 +63,7 @@ const routes: Routes = [
   {path:'New-Notification',component:AddNotificationComponent},
   {path:'about-department',component:AboutDepartmentComponent},
   {path : 'rco-report',component:RcoReportComponent},
-  {path : 'feedback-report' , component:FeedbackReportComponent}
+  {path : 'ddo-report' , component:FeedbackReportComponent}
   
 
 ];

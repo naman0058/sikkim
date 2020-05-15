@@ -34,6 +34,8 @@ import { AddPdfComponent } from './add-pdf/add-pdf.component';
 import { AddNotificationComponent } from './add-notification/add-notification.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AboutDepartmentComponent } from './about-department/about-department.component';
+import { FeedbackReportComponent } from './feedback-report/feedback-report.component';
+import { RcoReportComponent } from './rco-report/rco-report.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { AboutDepartmentComponent } from './about-department/about-department.co
     AddPdfComponent,
     AddNotificationComponent,
     AdminDashboardComponent,
-    AboutDepartmentComponent
+    AboutDepartmentComponent,
+    FeedbackReportComponent,
+    RcoReportComponent
   ],
   imports: [
     BrowserModule,

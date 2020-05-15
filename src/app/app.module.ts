@@ -36,6 +36,11 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AboutDepartmentComponent } from './about-department/about-department.component';
 import { FeedbackReportComponent } from './feedback-report/feedback-report.component';
 import { RcoReportComponent } from './rco-report/rco-report.component';
+import { DdoReportComponent } from './ddo-report/ddo-report.component';
+import { SbsComponent } from './sbs/sbs.component';
+import { DdoUsersComponent } from './ddo-users/ddo-users.component';
+import { RcoUsersComponent } from './rco-users/rco-users.component';
+import { SuperAdminUsersComponent } from './super-admin-users/super-admin-users.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +77,12 @@ import { RcoReportComponent } from './rco-report/rco-report.component';
     AdminDashboardComponent,
     AboutDepartmentComponent,
     FeedbackReportComponent,
-    RcoReportComponent
+    RcoReportComponent,
+    DdoReportComponent,
+    SbsComponent,
+    DdoUsersComponent,
+    RcoUsersComponent,
+    SuperAdminUsersComponent
   ],
   imports: [
     BrowserModule,

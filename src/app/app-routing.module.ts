@@ -30,7 +30,11 @@ import {AddNotificationComponent  } from "./add-notification/add-notification.co
 import {AboutDepartmentComponent} from "./about-department/about-department.component";
 import {RcoReportComponent} from "./rco-report/rco-report.component";
 import {FeedbackReportComponent} from "./feedback-report/feedback-report.component"
-
+import { DdoReportComponent } from "./ddo-report/ddo-report.component";
+import { DdoUsersComponent } from "./ddo-users/ddo-users.component";
+import { RcoUsersComponent } from "./rco-users/rco-users.component";
+import { SuperAdminUsersComponent } from "./super-admin-users/super-admin-users.component";
+import { SbsComponent } from "./sbs/sbs.component";
 
 
 
@@ -63,8 +67,12 @@ const routes: Routes = [
   {path:'New-Notification',component:AddNotificationComponent},
   {path:'about-department',component:AboutDepartmentComponent},
   {path : 'rco-report',component:RcoReportComponent},
-  {path : 'ddo-report' , component:FeedbackReportComponent}
-  
+  {path : 'feedback-report' , component:FeedbackReportComponent},
+  {path : 'ddo-report',component:DdoReportComponent},  
+  {path:'ddo-users',component:DdoUsersComponent},
+  {path:'rco-users',component:RcoUsersComponent},
+  {path:'super-admin-users',component:SuperAdminUsersComponent},
+  {path:'sbs',component:SbsComponent}
 
 ];
 

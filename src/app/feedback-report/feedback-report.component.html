@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-        <a class="nav-link" [routerLink]="['/Admin-Dashboard']">
+        <a class="nav-link" [routerLink]="['/feedback-report']">
           <i class="fa fa-fw fa-area-chart"></i>
           <span class="nav-link-text">Feedback</span>
         </a>
@@ -35,12 +35,12 @@
           New Users
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a [routerLink]="['/Admin-Login']" class="dropdown-item">Super Admin</a>
+          <a [routerLink]="['/super-admin-users']" class="dropdown-item">Super Admin</a>
           <div class="dropdown-divider"></div>
-          <a [routerLink]="['/DDO-Registeration']" class="dropdown-item">DDO </a>
+          <a [routerLink]="['/ddo-users']" class="dropdown-item">DDO </a>
 
           <div class="dropdown-divider"></div>
-          <a [routerLink]="['/RCO-Registeration']" class="dropdown-item">MIS/HOD/RCO</a>
+          <a [routerLink]="['/rco-users']" class="dropdown-item">MIS/HOD/RCO</a>
 
 
         </div>
@@ -102,7 +102,7 @@
 
 
   <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-    <a class="nav-link" [routerLink]="['/New-Pdf']">
+    <a class="nav-link" [routerLink]="['/sbs']">
       <i class="fa fa-fw fa-area-chart"></i>
       <span class="nav-link-text">SBS Upload</span>
     </a>
@@ -234,17 +234,17 @@
         <!-- Example DataTables Card-->
         <div class="card mb-3">
           <div class="card-header">
-            <i class="fa fa-table"></i> DDO Request</div>
+            <i class="fa fa-table"></i> Feedback Request</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
+                      <th>SL No.</th> 
                     <th>Name</th>
-                    <th>Email ID</th>
+                    <th>Email</th>
                     <th>Mobile Number</th>
-                    
-                    <th>Accept</th>
+                    <th>Feedback</th> 
                     <th>Delete</th>
                   
                   </tr>
@@ -255,8 +255,9 @@
                     <td>Tiger Nixon</td>
                     <td>System Architect</td>
                     <td>1234567890</td>
-                    
-                    <td><button class="btn btn-success">Accept</button></td>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                  
                    <td><button class="btn btn-danger">Delete</button></td>
                   </tr>
                

@@ -41,6 +41,8 @@ import { SbsComponent } from './sbs/sbs.component';
 import { DdoUsersComponent } from './ddo-users/ddo-users.component';
 import { RcoUsersComponent } from './rco-users/rco-users.component';
 import { SuperAdminUsersComponent } from './super-admin-users/super-admin-users.component';
+import { UpdatePasswordComponent } from './update-password/update-password.component';
+import { AdminnAvbarComponent } from './adminn-avbar/adminn-avbar.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +84,9 @@ import { SuperAdminUsersComponent } from './super-admin-users/super-admin-users.
     SbsComponent,
     DdoUsersComponent,
     RcoUsersComponent,
-    SuperAdminUsersComponent
+    SuperAdminUsersComponent,
+    UpdatePasswordComponent,
+    AdminnAvbarComponent
   ],
   imports: [
     BrowserModule,

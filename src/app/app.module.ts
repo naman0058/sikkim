@@ -43,6 +43,7 @@ import { RcoUsersComponent } from './rco-users/rco-users.component';
 import { SuperAdminUsersComponent } from './super-admin-users/super-admin-users.component';
 import { UpdatePasswordComponent } from './update-password/update-password.component';
 import { AdminnAvbarComponent } from './adminn-avbar/adminn-avbar.component';
+import { RecoverUserPasswordComponent } from './recover-user-password/recover-user-password.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { AdminnAvbarComponent } from './adminn-avbar/adminn-avbar.component';
     RcoUsersComponent,
     SuperAdminUsersComponent,
     UpdatePasswordComponent,
-    AdminnAvbarComponent
+    AdminnAvbarComponent,
+    RecoverUserPasswordComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 declare  var jQuery:  any;
 @Component({
-  selector: 'app-admin-login',
-  templateUrl: './admin-login.component.html',
-  styleUrls: ['./admin-login.component.css']
+  selector: 'app-recover-user-password',
+  templateUrl: './recover-user-password.component.html',
+  styleUrls: ['./recover-user-password.component.css']
 })
-export class AdminLoginComponent implements OnInit {
+export class RecoverUserPasswordComponent implements OnInit {
 
   constructor() { }
 
@@ -16,15 +16,11 @@ export class AdminLoginComponent implements OnInit {
    console.log('helo admin')
         $('#login').click(function(){
           if($('#userName').val() == [] || $('#userName').val() == "" || $('#userName').val() == "null" || $('#userName').val() == null) alert("Please Enter Username")
-        else if($('#password').val() == [] || $('#password').val() == "" || $('#password').val() == "null" || $('#password').val() == null) alert("Please Enter Password")
         else{
-          var url = 'http://sikkimfred.local.api/api/user/login';
-       
-       
+          var url = 'http://sikkimfred.local.api/api/user/recoverpassword';
           var data = {
             userName : $('#userName').val(),
-            password : $('#password').val()
-          }
+           }
           console.log('sending data',data)
             fetch(url,{
             method : 'POST',
@@ -35,10 +31,12 @@ export class AdminLoginComponent implements OnInit {
             }).then(res=>res.json())
             .catch(error => console.error("Error",error))
             .then (result => {
-            if(result.error.message == "Invalid username or password.")
-            alert("Invalid username or password.")
+              console.log("response aaya",result)
+            if(result.error.message == "User with username jnaman345@gmail.com does not exist.")
+            alert("Username Does not exists")
             else
-            window.location.href="/Admin-Dashboard"
+            alert("Link has been seet to your email id")
+            
             })
 
         }
@@ -51,3 +49,4 @@ export class AdminLoginComponent implements OnInit {
   }
 
 }
+

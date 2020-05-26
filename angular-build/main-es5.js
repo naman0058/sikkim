@@ -1428,6 +1428,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+    var _c0 = function _c0() {
+      return ["/recover-user-password"];
+    };
 
     var AdminLoginComponent =
     /*#__PURE__*/
@@ -1438,7 +1448,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(AdminLoginComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              console.log('helo admin');
+              $('#login').click(function () {
+                if ($('#userName').val() == [] || $('#userName').val() == "" || $('#userName').val() == "null" || $('#userName').val() == null) alert("Please Enter Username");else if ($('#password').val() == [] || $('#password').val() == "" || $('#password').val() == "null" || $('#password').val() == null) alert("Please Enter Password");else {
+                  var url = 'http://sikkimfred.local.api/api/user/login';
+                  var data = {
+                    userName: $('#userName').val(),
+                    password: $('#password').val()
+                  };
+                  console.log('sending data', data);
+                  fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: new Headers({
+                      'Content-Type': 'application/json'
+                    })
+                  }).then(function (res) {
+                    return res.json();
+                  }).catch(function (error) {
+                    return console.error("Error", error);
+                  }).then(function (result) {
+                    if (result.error.message == "Invalid username or password.") alert("Invalid username or password.");else window.location.href = "/Admin-Dashboard";
+                  });
+                }
+              });
+            });
+          })(jQuery);
+        }
       }]);
 
       return AdminLoginComponent;
@@ -1451,9 +1490,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AdminLoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AdminLoginComponent,
       selectors: [["app-admin-login"]],
-      decls: 28,
-      vars: 0,
-      consts: [[1, "container"], [1, "row", "justify-content-center"], [1, "col-sm-12", "col-md-12", "col-lg-5", "pb-5"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["type", "email", "id", "email", "name", "email", "placeholder", "Enter Username", "required", "", 1, "form-control"], ["type", "number", "id", "email", "name", "email", "placeholder", "Enter Password", "required", "", 1, "form-control"], [1, "text-center"], ["type", "submit", "value", "Login", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
+      decls: 31,
+      vars: 2,
+      consts: [[1, "container"], [1, "row", "justify-content-center"], [1, "col-sm-12", "col-md-12", "col-lg-5", "pb-5"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["type", "text", "id", "userName", "name", "email", "placeholder", "Enter Username", "required", "", 1, "form-control"], ["type", "password", "id", "password", "name", "email", "placeholder", "Enter Password", "required", "", 1, "form-control"], [1, "text-center"], ["type", "button", "id", "login", "value", "Login", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"], [2, "float", "right", 3, "routerLink"]],
       template: function AdminLoginComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
@@ -1536,6 +1575,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "a", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Forgot Password");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1548,7 +1595,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+        }
       },
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLWxvZ2luL2FkbWluLWxvZ2luLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -2483,6 +2537,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./update-password/update-password.component */
     "./src/app/update-password/update-password.component.ts");
+    /* harmony import */
+
+
+    var _recover_user_password_recover_user_password_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    /*! ./recover-user-password/recover-user-password.component */
+    "./src/app/recover-user-password/recover-user-password.component.ts");
 
     var routes = [{
       path: 'home',
@@ -2590,6 +2650,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: 'update-password',
       component: _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_35__["UpdatePasswordComponent"]
+    }, {
+      path: 'recover-user-password',
+      component: _recover_user_password_recover_user_password_component__WEBPACK_IMPORTED_MODULE_36__["RecoverUserPasswordComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -2998,6 +3061,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _adminn_avbar_adminn_avbar_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
     /*! ./adminn-avbar/adminn-avbar.component */
     "./src/app/adminn-avbar/adminn-avbar.component.ts");
+    /* harmony import */
+
+
+    var _recover_user_password_recover_user_password_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
+    /*! ./recover-user-password/recover-user-password.component */
+    "./src/app/recover-user-password/recover-user-password.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -3017,7 +3086,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"], _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_34__["AboutDepartmentComponent"], _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_35__["FeedbackReportComponent"], _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_36__["RcoReportComponent"], _ddo_report_ddo_report_component__WEBPACK_IMPORTED_MODULE_37__["DdoReportComponent"], _sbs_sbs_component__WEBPACK_IMPORTED_MODULE_38__["SbsComponent"], _ddo_users_ddo_users_component__WEBPACK_IMPORTED_MODULE_39__["DdoUsersComponent"], _rco_users_rco_users_component__WEBPACK_IMPORTED_MODULE_40__["RcoUsersComponent"], _super_admin_users_super_admin_users_component__WEBPACK_IMPORTED_MODULE_41__["SuperAdminUsersComponent"], _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_42__["UpdatePasswordComponent"], _adminn_avbar_adminn_avbar_component__WEBPACK_IMPORTED_MODULE_43__["AdminnAvbarComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"], _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_34__["AboutDepartmentComponent"], _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_35__["FeedbackReportComponent"], _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_36__["RcoReportComponent"], _ddo_report_ddo_report_component__WEBPACK_IMPORTED_MODULE_37__["DdoReportComponent"], _sbs_sbs_component__WEBPACK_IMPORTED_MODULE_38__["SbsComponent"], _ddo_users_ddo_users_component__WEBPACK_IMPORTED_MODULE_39__["DdoUsersComponent"], _rco_users_rco_users_component__WEBPACK_IMPORTED_MODULE_40__["RcoUsersComponent"], _super_admin_users_super_admin_users_component__WEBPACK_IMPORTED_MODULE_41__["SuperAdminUsersComponent"], _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_42__["UpdatePasswordComponent"], _adminn_avbar_adminn_avbar_component__WEBPACK_IMPORTED_MODULE_43__["AdminnAvbarComponent"], _recover_user_password_recover_user_password_component__WEBPACK_IMPORTED_MODULE_44__["RecoverUserPasswordComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]]
       });
     })();
@@ -3028,7 +3097,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"], _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_34__["AboutDepartmentComponent"], _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_35__["FeedbackReportComponent"], _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_36__["RcoReportComponent"], _ddo_report_ddo_report_component__WEBPACK_IMPORTED_MODULE_37__["DdoReportComponent"], _sbs_sbs_component__WEBPACK_IMPORTED_MODULE_38__["SbsComponent"], _ddo_users_ddo_users_component__WEBPACK_IMPORTED_MODULE_39__["DdoUsersComponent"], _rco_users_rco_users_component__WEBPACK_IMPORTED_MODULE_40__["RcoUsersComponent"], _super_admin_users_super_admin_users_component__WEBPACK_IMPORTED_MODULE_41__["SuperAdminUsersComponent"], _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_42__["UpdatePasswordComponent"], _adminn_avbar_adminn_avbar_component__WEBPACK_IMPORTED_MODULE_43__["AdminnAvbarComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _simplecard_simplecard_component__WEBPACK_IMPORTED_MODULE_6__["SimplecardComponent"], _flipcard_flipcard_component__WEBPACK_IMPORTED_MODULE_7__["FlipcardComponent"], _partner_partner_component__WEBPACK_IMPORTED_MODULE_8__["PartnerComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _feedback_feedback_component__WEBPACK_IMPORTED_MODULE_10__["FeedbackComponent"], _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_11__["ContactusComponent"], _sitemap_sitemap_component__WEBPACK_IMPORTED_MODULE_12__["SitemapComponent"], _vacancies_vacancies_component__WEBPACK_IMPORTED_MODULE_13__["VacanciesComponent"], _forms_forms_component__WEBPACK_IMPORTED_MODULE_14__["FormsComponent"], _training_training_component__WEBPACK_IMPORTED_MODULE_15__["TrainingComponent"], _letter_letter_component__WEBPACK_IMPORTED_MODULE_16__["LetterComponent"], _notification_notification_component__WEBPACK_IMPORTED_MODULE_17__["NotificationComponent"], _general_general_component__WEBPACK_IMPORTED_MODULE_18__["GeneralComponent"], _office_office_component__WEBPACK_IMPORTED_MODULE_19__["OfficeComponent"], _gazatte_gazatte_component__WEBPACK_IMPORTED_MODULE_20__["GazatteComponent"], _pension_pension_component__WEBPACK_IMPORTED_MODULE_21__["PensionComponent"], _pension_notification_pension_notification_component__WEBPACK_IMPORTED_MODULE_22__["PensionNotificationComponent"], _pao_notification_pao_notification_component__WEBPACK_IMPORTED_MODULE_23__["PaoNotificationComponent"], _da_da_component__WEBPACK_IMPORTED_MODULE_24__["DaComponent"], _transfer_transfer_component__WEBPACK_IMPORTED_MODULE_25__["TransferComponent"], _ddo_registeration_ddo_registeration_component__WEBPACK_IMPORTED_MODULE_26__["DdoRegisterationComponent"], _rco_registeration_rco_registeration_component__WEBPACK_IMPORTED_MODULE_27__["RcoRegisterationComponent"], _receipt_receipt_component__WEBPACK_IMPORTED_MODULE_28__["ReceiptComponent"], _ag_report_ag_report_component__WEBPACK_IMPORTED_MODULE_29__["AgReportComponent"], _admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_30__["AdminLoginComponent"], _add_pdf_add_pdf_component__WEBPACK_IMPORTED_MODULE_31__["AddPdfComponent"], _add_notification_add_notification_component__WEBPACK_IMPORTED_MODULE_32__["AddNotificationComponent"], _admin_dashboard_admin_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["AdminDashboardComponent"], _about_department_about_department_component__WEBPACK_IMPORTED_MODULE_34__["AboutDepartmentComponent"], _feedback_report_feedback_report_component__WEBPACK_IMPORTED_MODULE_35__["FeedbackReportComponent"], _rco_report_rco_report_component__WEBPACK_IMPORTED_MODULE_36__["RcoReportComponent"], _ddo_report_ddo_report_component__WEBPACK_IMPORTED_MODULE_37__["DdoReportComponent"], _sbs_sbs_component__WEBPACK_IMPORTED_MODULE_38__["SbsComponent"], _ddo_users_ddo_users_component__WEBPACK_IMPORTED_MODULE_39__["DdoUsersComponent"], _rco_users_rco_users_component__WEBPACK_IMPORTED_MODULE_40__["RcoUsersComponent"], _super_admin_users_super_admin_users_component__WEBPACK_IMPORTED_MODULE_41__["SuperAdminUsersComponent"], _update_password_update_password_component__WEBPACK_IMPORTED_MODULE_42__["UpdatePasswordComponent"], _adminn_avbar_adminn_avbar_component__WEBPACK_IMPORTED_MODULE_43__["AdminnAvbarComponent"], _recover_user_password_recover_user_password_component__WEBPACK_IMPORTED_MODULE_44__["RecoverUserPasswordComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -7929,9 +7998,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           (function ($) {
             $(document).ready(function () {
-              $.getJSON('https://www.deloservices.com/api/index', function (data) {
-                fillDropDown('categoryid', data, 'Choose Category', 0);
+              var department = [];
+              var ddo_code = [];
+              $.getJSON('http://sikkimfred.local.api/api/department', function (data) {
+                department = data;
+                fillDropDown('categoryid', data, 'Choose Department', 0);
+              });
+              $.getJSON('http://sikkimfred.local.api/api/department', function (data) {
+                ddo_code = data;
+                fillDropDown('ddo_code', [], 'Choose DDO Code', 0);
                 console.log("data work", data);
+              });
+              $('#categoryid').change(function () {
+                var filteredData = ddo_code.filter(function (item) {
+                  return item.departmentid == $('#categoryid').val();
+                });
+                fillDropDown('ddo_code', filteredData, 'Choose DDO Code', 0);
               });
 
               function fillDropDown(id, data, label) {
@@ -7961,9 +8043,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     DdoRegisterationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: DdoRegisterationComponent,
       selectors: [["app-ddo-registeration"]],
-      decls: 156,
+      decls: 136,
       vars: 0,
-      consts: [[1, "container"], [1, "row"], [1, "col-sm-12", "col-md-12", "col-lg-4"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "margin", "2px"], [2, "color", "red"], [1, "col-sm-12", "col-md-12", "col-lg-8", "pb-5"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["id", "categoryid", 1, "form-control"], [1, "form-control"], ["value", "010001"], ["value", "010102"], ["value", "010103"], ["value", "010204"], ["value", "010205"], ["value", "010306"], ["value", "010307"], ["value", "010408"], ["value", "010409"], ["value", "UMESH TRIKHATRI"], ["value", "1045"], ["value", "0"], ["placeholder", "Enter Office Address 1", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 2", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TIN Number", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TAN Number", "required", "", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "Enter Email", "required", "", 1, "form-control"], ["type", "number", "id", "email", "name", "email", "placeholder", "Enter Mobile Number", "required", "", 1, "form-control"], [2, "background-color", "White", "color", "#cc3300", "font-family", "Verdana", "height", "46px", "width", "181px"], ["src", "http://sikkimfred.gov.in/CaptchaImage.axd?guid=4930db49-aeb7-4263-a9a0-cc7b64923ab0", "border", "0", "width", "180", "height", "50"], ["type", "text", "id", "email", "name", "email", "placeholder", "Enter Please Enter The Text  as Shown Above", "required", "", 1, "form-control"], [1, "text-center"], ["type", "submit", "value", "Save & Send", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
+      consts: [[1, "container"], [1, "row"], [1, "col-sm-12", "col-md-12", "col-lg-4"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "margin", "2px"], [2, "color", "red"], [1, "col-sm-12", "col-md-12", "col-lg-8", "pb-5"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["id", "categoryid", 1, "form-control"], ["id", "ddo_code", 1, "form-control"], [1, "form-control"], ["value", "UMESH TRIKHATRI"], ["value", "1045"], ["value", "0"], ["placeholder", "Enter Office Address 1", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 2", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TIN Number", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TAN Number", "required", "", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "Enter Email", "required", "", 1, "form-control"], ["type", "number", "id", "email", "name", "email", "placeholder", "Enter Mobile Number", "required", "", 1, "form-control"], [2, "background-color", "White", "color", "#cc3300", "font-family", "Verdana", "height", "46px", "width", "181px"], ["src", "http://sikkimfred.gov.in/CaptchaImage.axd?guid=4930db49-aeb7-4263-a9a0-cc7b64923ab0", "border", "0", "width", "180", "height", "50"], ["type", "text", "id", "email", "name", "email", "placeholder", "Enter Please Enter The Text  as Shown Above", "required", "", 1, "form-control"], [1, "text-center"], ["type", "submit", "value", "Save & Send", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
       template: function DdoRegisterationComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
@@ -8104,65 +8186,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "select", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "option");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "Select DDO Code");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "select", 15);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "option", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "010001");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "Name of DDO ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "**");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "option", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "010102");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "select", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Select Name of DDO");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "option", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "option", 17);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, "010103");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "option", 19);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "010204");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "option", 20);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "010205");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "option", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "010306");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "option", 22);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "010307");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "option", 23);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "010408");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "option", 24);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "010409");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "UMESH TRIKHATRI");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8172,69 +8228,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "Name of DDO ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "Designation ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "**");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "select", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "option");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "Select Name of DDO");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "option", 25);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "UMESH TRIKHATRI");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "**");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "select", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Select Designation");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "option", 18);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "Designation ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "**");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "select", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "option");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "Select Designation");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "option", 26);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "WDO");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "WDO");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8244,77 +8264,139 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "District ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "District ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "**");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "select", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "option");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "Select District");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "option", 27);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, "HEAD QUARTER");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "**");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "select", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "option");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "Select District");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "option", 19);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "Office Address 1 ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "*");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](106, "textarea", 28);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, "HEAD QUARTER");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Offie Address 2 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "Office Address 1 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](86, "textarea", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Offie Address 2 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](90, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](92, "textarea", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "TIN Number ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](96, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](98, "input", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "TAN Number ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](105, "input", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "Email ID ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "span", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "textarea", 29);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "input", 24);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8324,101 +8406,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "TIN Number ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "Mobile Number ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](116, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](118, "input", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "TAN Number ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](119, "input", 25);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "Word Verification ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](123, "span", 12);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](125, "input", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "div", 26);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "div", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, "Email ID ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "*");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](132, "input", 32);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "div", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](135, "Mobile Number ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "*");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](139, "input", 33);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "div", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Word Verification ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](144, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "div", 34);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](146, "img", 35);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](126, "img", 27);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8426,31 +8446,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149, "Enter Please Enter The Text as Shown Above ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "Enter Please Enter The Text as Shown Above ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151, "*");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](153, "input", 36);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](131, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](154, "div", 37);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](155, "input", 38);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](133, "input", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "div", 29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](135, "input", 30);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8528,7 +8548,59 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(DdoReportComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              $.getJSON('http://sikkimfred.local.api/api/DDORegistration/all', function (data) {
+                makeTable(data);
+              });
+
+              function makeTable(data) {
+                var table = " <table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">\n        <thead>\n          <tr>\n          <th>SL No.</th> \n          <th>Name</th>\n          <th>REG.Type</th>\n          <th>Department</th>\n          <th>Designation</th> \n          <th>District</th>\n          <th>Office Address(1)</th>\n          <th>Office Address(2)</th>\n          <th>Tin No</th> \n          <th>Tan No</th>\n          <th>Email</th>\n           <th>Accept</th>\n          <th>Delete</th>\n            </tr>\n        </thead>\n       \n        <tbody>";
+                $.each(data, function (i, item) {
+                  table += "  <tr>\n        <td>".concat(i + 1, "</td>\n        <td>").concat(item.adminName, "</td>\n        <td>").concat(item.registrationType, "</td>\n        <td>").concat(item.department, "</td>\n        <td>").concat(item.designation, "</td>\n        <td>").concat(item.district, "</td>\n        <td>").concat(item.officeAddress1, "</td>\n        <td>").concat(item.officeAddress2, "</td>\n        <td>").concat(item.tinNumber, "</td>\n        <td>").concat(item.tanNumber, "</td>\n        <td>").concat(item.emailId, "</td>\n        \n        <td><button class=\"btn btn-success accept\" regid=\"").concat(item.id, "\">Accept</button></td>\n       <td><button class=\"btn btn-danger delete\" id=\"").concat(item.id, "\">Delete</button></td>\n      </tr>");
+                });
+                table += "</tbody>\n      </table>";
+                $('#result').html(table);
+              }
+
+              $('#result').on('click', '.accept', function () {
+                var url = 'http://sikkimfred.local.api/api/DDORegistration/approve';
+                var regId = $(this).attr('regid');
+                var data = {
+                  regId: parseInt(regId),
+                  approvedBy: 1
+                };
+                console.log('sending data', data);
+                fetch(url, {
+                  method: 'POST',
+                  body: JSON.stringify(data),
+                  headers: new Headers({
+                    'Content-Type': 'application/json'
+                  })
+                }).then(function (res) {
+                  return res.json();
+                }).catch(function (error) {
+                  return console.error("Error", error);
+                }).then(function (result) {
+                  console.log("response", result);
+                });
+              });
+              $('#result').on('click', '.delete', function () {
+                var id = $(this).attr('id');
+                console.log("id hai", id);
+                fetch('http://sikkimfred.local.api/api/DDORegistration/' + id, {
+                  method: 'DELETE'
+                }).then(function (res) {
+                  return res.text();
+                }) // or res.json()
+                .then(function (res) {
+                  return console.log("response", res);
+                });
+              });
+            });
+          })(jQuery);
+        }
       }]);
 
       return DdoReportComponent;
@@ -8823,7 +8895,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(DdoUsersComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              $.getJSON('http://sikkimfred.local.api/api/user/ddo', function (data) {
+                makeTable(data);
+              });
+
+              function makeTable(data) {
+                var table = " <table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">\n        <thead>\n          <tr>\n              <th>SL No.</th> \n            <th>Name</th>\n            <th>DDO Code</th>\n            <th>User ID</th>\n            </tr>\n        </thead>\n       \n        <tbody>";
+                $.each(data, function (i, item) {
+                  table += "  <tr>\n            <td>".concat(i + 1, "</td>\n            <td>").concat(item.userName, "</td>\n            <td>").concat(item.ddoCode, "</td>\n            <td>").concat(item.id, "</td>\n          \n           <td><button class=\"btn btn-primary\">Send Details</button></td>\n          </tr>");
+                });
+                table += "</tbody>\n      </table>";
+                $('#result').html(table);
+              }
+            });
+          })(jQuery);
+        }
       }]);
 
       return DdoUsersComponent;
@@ -8836,9 +8925,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     DdoUsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: DdoUsersComponent,
       selectors: [["app-ddo-users"]],
-      decls: 37,
+      decls: 14,
       vars: 0,
-      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "dataTable", "width", "100%", "cellspacing", "0", 1, "table", "table-bordered"], [1, "btn", "btn-primary"]],
+      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "result"]],
       template: function DdoUsersComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-adminn-avbar");
@@ -8869,83 +8958,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "table", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "thead");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "SL No.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Name");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "DDO Code");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "User ID");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "tbody");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Tiger Nixon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "button", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Send Details");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12212,28 +12225,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NavbarComponent,
       selectors: [["app-navbar"]],
-      decls: 145,
+      decls: 142,
       vars: 52,
-      consts: [[1, "d-flex", "flex-row", "p-2", "justify-content-between", "kd-on"], [1, "p-2", "kd-on"], ["src", "https://i.ibb.co/1ZZFgvx/download.jpg", 2, "width", "50px"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [1, "navbar", "navbar-expand-md", "navbar-light", "bg-primary", "sticky-top"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "flex-column"], [1, "navbar-nav", "w-100", "justify-content-center", "px-3"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white", "margin-left", "10px"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://www.sikkimtax.gov.in/", 1, "dropdown-item"], ["href", "http://sikkimlotteries.com/", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", "margin-left", "10px", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"], [2, "background-color", "#36DAEA", "height", "4px", "margin", "0px"]],
+      consts: [[1, "d-flex", "flex-row", "p-2", "justify-content-between", "kd-on"], [1, "p-2", "kd-on"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [1, "navbar", "navbar-expand-md", "navbar-light", "sticky-top", 2, "background-color", "brown"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "flex-column"], [1, "navbar-nav", "w-100", "justify-content-center", "px-3"], [1, "nav-item", "dropdown"], ["href", "#", "id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", 2, "color", "white", "margin-left", "10px"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "dropdown-divider"], ["href", "http://www.sikkimtax.gov.in/", 1, "dropdown-item"], ["href", "http://sikkimlotteries.com/", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/RTI%20Notification.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/RTI/rti-act%20(1).pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OM_Reconciliation_of_Accounts.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Support%20for%20SIFMSNew.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/SIFMS/Documents/Sikkim_Integrated_Financial_Management_System.pdf", 1, "dropdown-item"], ["href", "http://sikkimfred.gov.in/Office%20Memorandum/Documents/OFFICE%20MEMORANDUM%20%20SIFMS.pdf", 1, "dropdown-item"], [1, "nav-item"], ["tabindex", "-1", "aria-disabled", "true", 1, "nav-link", 2, "color", "white", "margin-left", "10px", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-user"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "form", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "input", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "form", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Search");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Search");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12243,197 +12252,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nav", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nav", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "span", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "ul", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "li", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " Divisions ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "span", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "ul", 9);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "FRBM");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Accounts");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " Divisions ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Loan");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "FCD");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "FRBM");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Budget");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "a", 16);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Commercial Tax");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Accounts");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "a", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "State Lotteries");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Pension");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Loan");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "GPF/GIS/CPF");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "Internal Audit");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "FCD");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "LFA");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Budget");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "li", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "a", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, " Orders ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Commercial Tax");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "a", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Letters");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](56, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "Notifications");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "State Lotteries");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Rules");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](62, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "D.A.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Pension");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, "Circulars");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](68, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "ACT");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "GPF/GIS/CPF");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "Office Memo.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](74, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "Press Release");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Internal Audit");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](77, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, "Gazette");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "LFA");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12441,129 +12364,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " \xA0\xA0\xA0\xA0\xA0 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "li", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "li", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "a", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "a", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, " Employees Corner ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "Vacancies");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, " Orders ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](87, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " Transfer/Promotion");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](90, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "Forms");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, "Letters");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](93, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "Trainings");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Notifications");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](58, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "li", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "a", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, " RTI ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "Rules");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](61, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "a", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "Notification");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](103, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "a", 19);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, "ACT");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "D.A.");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](64, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Circulars");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](67, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "li", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "a", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, " SIFMS ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "ACT");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](70, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "a", 20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112, "Reconciliation of Accounts");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](113, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "a", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "Contacts for SIFMS Help Desk.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "Office Memo.");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](116, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](73, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "a", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "Instructions on SIFMS I.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](119, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "a", 22);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "Instructions on SIFMS II.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "Press Release");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](122, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](76, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "a", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "Office Memorandum on implementation of SIFMS.\n");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "Gazette");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12571,51 +12450,181 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " \xA0\xA0\xA0\xA0\xA0 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "li", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "li", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "a", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "a", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, "Contact us");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, " Employees Corner ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "div", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "Vacancies");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](86, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, " Transfer/Promotion");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](89, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "Forms");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](92, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "Trainings");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, " \xA0\xA0\xA0\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "li", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, " \xA0\xA0\xA0\xA0\xA0 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "a", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "li", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](132, "i", 26);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "a", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, " Login ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, " RTI ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "div", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "a", 17);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "Login");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](137, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "a", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, "DDO Registeration");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Notification");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](140, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](102, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "a", 18);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "MIS/HOD/RCO User Registration");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "ACT");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, " \xA0\xA0\xA0\xA0\xA0 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "li", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "a", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, " SIFMS ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "div", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "a", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](111, "Reconciliation of Accounts");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "a", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "Contacts for SIFMS Help Desk.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](115, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "a", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "Instructions on SIFMS I.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](118, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "a", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "Instructions on SIFMS II.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](121, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "a", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, "Office Memorandum on implementation of SIFMS.\n");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, " \xA0\xA0\xA0\xA0\xA0 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "li", 23);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "a", 24);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, "Contact us");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, " \xA0\xA0\xA0\xA0\xA0 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "li", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "a", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](131, "i", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, " Login ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "div", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](135, "Login");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](136, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138, "DDO Registeration");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](139, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "a", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](141, "MIS/HOD/RCO User Registration");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12628,14 +12637,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "hr", 27);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](144, "hr", 27);
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](26, _c0));
 
@@ -12741,7 +12746,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyJ9 */", ".navbar[_ngcontent-%COMP%] {\n    padding:0rem;\n    margin-bottom:0rem;\n  }\n  \n  .dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%] {\n    border-radius:0;\n   }\n  \n  \n  \n  @media (min-width: 768px) {  \n  .dropdown[_ngcontent-%COMP%]:hover   .dropdown-menu[_ngcontent-%COMP%] {\n      display: block;\n      margin-top: 0;\n    border-radius:0;\n   }\n    \n    .kd-on[_ngcontent-%COMP%]{\n     \n      background-color:white;\n    }\n  }"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyJ9 */", ".navbar[_ngcontent-%COMP%] {\n    padding:0rem;\n    margin-bottom:0rem;\n    height:50px;\n  }\n  \n  .dropdown[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%] {\n    border-radius:0;\n   }\n  \n  \n  \n  @media (min-width: 768px) {  \n  .dropdown[_ngcontent-%COMP%]:hover   .dropdown-menu[_ngcontent-%COMP%] {\n      display: block;\n      margin-top: 0;\n    border-radius:0;\n   }\n    \n    .kd-on[_ngcontent-%COMP%]{\n     \n      background-color:white;\n    }\n  }"]
     });
     /*@__PURE__*/
 
@@ -14740,7 +14745,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(RcoRegisterationComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              var department = [];
+              $.getJSON('http://sikkimfred.local.api/api/department', function (data) {
+                department = data;
+                fillDropDown('department', data, 'Choose Department', 0);
+              });
+              $('#submit').click(function () {
+                if ($('#RegistrationType').val() == null || $('#RegistrationType').val() == "null" || $('#RegistrationType').val() == [] || $('#RegistrationType').val() == "") alert("Select Registeration Type...");else if ($('#adminName').val() == null || $('#adminName').val() == "null" || $('#adminName').val() == [] || $('#adminName').val() == "") alert("Enter Name...");else if ($('#department').val() == null || $('#department').val() == "null" || $('#department').val() == [] || $('#department').val() == "") alert("Select Department...");else if ($('#designation').val() == null || $('#designation').val() == "null" || $('#designation').val() == [] || $('#designation').val() == "") alert("Enter Designation...");else if ($('#district').val() == null || $('#district').val() == "null" || $('#district').val() == [] || $('#district').val() == "") alert("Enter District...");else if ($('#officeAddress1').val() == null || $('#officeAddress1').val() == "null" || $('#officeAddress1').val() == [] || $('#officeAddress1').val() == "") alert("Enter Office Address...");else if ($('#officeAddress2').val() == null || $('#officeAddress2').val() == "null" || $('#officeAddress2').val() == [] || $('#officeAddress2').val() == "") alert("Enter Office Address...");else if ($('#tinNumber').val() == null || $('#tinNumber').val() == "null" || $('#tinNumber').val() == [] || $('#tinNumber').val() == "") alert("Enter Tin Number...");else if ($('#tanNumber').val() == null || $('#tanNumber').val() == "null" || $('#tanNumber').val() == [] || $('#tanNumber').val() == "") alert("Enter Tan Number...");else if ($('#emailId').val() == null || $('#emailId').val() == "null" || $('#emailId').val() == [] || $('#emailId').val() == "") alert("Enter Email ID...");else if ($('#contactNumber').val() == null || $('#contactNumber').val() == "null" || $('#contactNumber').val() == [] || $('#contactNumber').val() == "") alert("Enter Contact Number...");else {
+                  var url = 'http://sikkimfred.local.api/api/RCORegistration';
+                  var insertobj = {
+                    RegistrationType: $('#RegistrationType').val(),
+                    adminName: $('#adminName').val(),
+                    department: $('#department').val(),
+                    designation: $('#designation').val(),
+                    district: $('#district').val(),
+                    officeAddress1: $('#officeAddress1').val(),
+                    officeAddress2: $('#officeAddress2').val(),
+                    tinNumber: $('#tinNumber').val(),
+                    tanNumber: $('#tanNumber').val(),
+                    emailId: $('#emailId').val(),
+                    contactNumber: $('#contactNumber').val()
+                  };
+                  console.log("InsertObj", insertobj);
+                  fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(insertobj),
+                    headers: new Headers({
+                      'Content-Type': 'application/json'
+                    })
+                  }).then(function (res) {
+                    return res.json();
+                  }).catch(function (error) {
+                    return console.error("Error", error);
+                  }).then(function (result) {
+                    if (result.msg == "success") alert("Successfully Inserted");else alert("An error occured..Please try again later");
+                  });
+                }
+              });
+
+              function fillDropDown(id, data, label) {
+                var selectedid = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+                $("#".concat(id)).empty();
+                $("#".concat(id)).append($('<option>').val("null").text(label));
+                $.each(data, function (i, item) {
+                  if (item.id == selectedid) {
+                    $("#".concat(id)).append($('<option selected>').val(item.id).text(item.name));
+                  } else {
+                    $("#".concat(id)).append($('<option>').val(item.id).text(item.name));
+                  }
+                });
+              }
+            });
+          })(jQuery);
+        }
       }]);
 
       return RcoRegisterationComponent;
@@ -14753,9 +14813,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     RcoRegisterationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RcoRegisterationComponent,
       selectors: [["app-rco-registeration"]],
-      decls: 227,
+      decls: 113,
       vars: 0,
-      consts: [[1, "container"], [1, "row"], [1, "col-sm-12", "col-md-12", "col-lg-4"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "margin", "2px"], [2, "color", "red"], [1, "col-sm-12", "col-md-12", "col-lg-8", "pb-5"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], [1, "form-control"], ["value", "Please Select a Type"], ["value", "MIS"], ["value", "HOD"], ["value", "RCO"], ["type", "text", "id", "name", "name", "name", "placeholder", "Enter Name", "required", "", 1, "form-control"], ["value", "1"], ["value", "2"], ["value", "3"], ["value", "4"], ["value", "5"], ["value", "6"], ["value", "7"], ["value", "8"], ["value", "9"], ["value", "10"], ["value", "11"], ["value", "12"], ["value", "13"], ["value", "14"], ["value", "15"], ["value", "16"], ["value", "17"], ["value", "18"], ["value", "19"], ["value", "20"], ["value", "21"], ["value", "22"], ["value", "23"], ["value", "24"], ["value", "25"], ["value", "26"], ["value", "27"], ["value", "28"], ["value", "29"], ["value", "30"], ["value", "31"], ["value", "32"], ["value", "33"], ["value", "34"], ["value", "35"], ["value", "36"], ["value", "37"], ["value", "38"], ["value", "39"], ["value", "40"], ["value", "41"], ["value", "42"], ["value", "43"], ["value", "46"], ["value", "47"], ["value", "91"], ["value", "92"], ["value", "94"], ["value", "99"], ["type", "text", "id", "name", "name", "name", "placeholder", "Designation", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "Enter District", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 1", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 2", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TIN Number", "required", "", 1, "form-control"], ["type", "text", "id", "name", "name", "name", "placeholder", "TAN Number", "required", "", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "Enter Email", "required", "", 1, "form-control"], ["type", "number", "id", "email", "name", "email", "placeholder", "Enter Mobile Number", "required", "", 1, "form-control"], [2, "background-color", "White", "color", "#cc3300", "font-family", "Verdana", "height", "46px", "width", "181px"], ["src", "http://sikkimfred.gov.in/CaptchaImage.axd?guid=4930db49-aeb7-4263-a9a0-cc7b64923ab0", "border", "0", "width", "180", "height", "50"], ["type", "text", "id", "email", "name", "email", "placeholder", "Enter Please Enter The Text  as Shown Above", "required", "", 1, "form-control"], [1, "text-center"], ["type", "submit", "value", "Save & Send", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
+      consts: [[1, "container"], [1, "row"], [1, "col-sm-12", "col-md-12", "col-lg-4"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "margin", "2px"], [2, "color", "red"], [1, "col-sm-12", "col-md-12", "col-lg-8", "pb-5"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["id", "RegistrationType", 1, "form-control"], ["value", "null"], ["value", "MIS"], ["value", "HOD"], ["value", "RCO"], ["type", "text", "id", "adminName", "name", "name", "placeholder", "Enter Name", "required", "", 1, "form-control"], ["id", "department", 1, "form-control"], ["type", "text", "id", "designation", "name", "name", "placeholder", "Designation", "required", "", 1, "form-control"], ["type", "text", "id", "district", "name", "name", "placeholder", "Enter District", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 1", "id", "officeAddress1", "required", "", 1, "form-control"], ["placeholder", "Enter Office Address 2", "id", "officeAddress2", "required", "", 1, "form-control"], ["type", "text", "id", "tinNumber", "name", "name", "placeholder", "TIN Number", "required", "", 1, "form-control"], ["type", "text", "id", "tanNumber", "name", "name", "placeholder", "TAN Number", "required", "", 1, "form-control"], ["type", "email", "id", "emailId", "name", "email", "placeholder", "Enter Email", "required", "", 1, "form-control"], ["type", "number", "id", "contactNumber", "name", "email", "placeholder", "Enter Mobile Number", "required", "", 1, "form-control"], [1, "text-center"], ["type", "button", "value", "Save & Send", "id", "submit", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
       template: function RcoRegisterationComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
@@ -14930,529 +14990,183 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "select", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](56, "select", 20);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "option");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "Select Department");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "option", 20);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "1 - AGRICULTURE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "option", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "2 - ANIMAL HUSBANDRY AND VETERINARY SERVICES DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "option", 22);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "3 - BUILDING & HOUSING DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "option", 23);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "4 - CO-OPERATION DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "option", 24);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "5 - CULTURAL DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "option", 25);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "6 - ECCLESIASTICAL DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "option", 26);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "7 - EDUCATION DEVELOPMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "option", 27);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "8 - ELECTION DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "option", 28);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "9 - EXCISE");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "option", 29);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "10 - FINANCE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "option", 30);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "11 - FOOD AND CIVIL SUPPLIES DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "option", 31);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "12 - FOREST AND ENVIRONMENT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "option", 32);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, "13 - HEALTH AND FAMILY WELFARE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "option", 33);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "14 - HOME DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "option", 34);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "15 - HORTICULTURE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "option", 35);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "16 - COMMERCE AND INDUSTRIES");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "option", 36);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "17 - INFORMATION AND PUBLIC RELATION DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "option", 37);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "18 - INFORMATION TECHNOLOGY DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "option", 38);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, "19 - WATER RESOURCE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "option", 39);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "20 - JUDICIARY");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "option", 40);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, "21 - LABOUR DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "option", 41);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "22 - LAND REVENUE AND DISASTER MANAGEMENT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "option", 42);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "23 - LAW DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "option", 43);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, "24 - LEGISLATURE");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "option", 44);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "25 - MINES AND GEOLOGY DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "option", 45);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110, "26 - MOTOR VEHICLES");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "option", 46);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112, "27 - PARLIAMENTARY AFFAIRS DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "option", 47);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "28 - DEPARTMENT OF PERSONNEL");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "option", 48);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116, "29 - PLANNING AND DEVELOPMENT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "option", 49);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "30 - POLICE");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "option", 50);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "31 - POWER DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "option", 51);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "32 - PRINTING AND STATIONERY DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "option", 52);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "33 - PUBLIC HEALTH ENGINEERING DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "option", 53);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, "34 - ROADS AND BRIDGES DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "option", 54);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, "35 - RURAL DEVELOPMENT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "option", 55);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "36 - SCIENCE AND TECHNOLOGY DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "option", 56);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, "37 - TRANSPORT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "option", 57);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "38 - SOCIAL JUSTICE AND WELFARE DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "option", 58);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "39 - SPORTS AND YOUTH AFFAIRS DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "option", 59);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138, "40 - TOURISM AND CIVIL AVIATION DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "option", 60);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "41 - URBAN DEVELOPMENT DEPARTMENT");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "option", 61);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "42 - VIGILANCE");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "option", 62);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, "43 - PANCHAYATI RAJ INSTITUTIONS");
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "option", 63);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "46 - MUNICIPAL AFFAIRS");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "option", 64);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148, "47 - SKILL DEVELOPMENT AND ENTREPRENEURSHIP");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "option", 65);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](150, "91 - GOVERNOR");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "option", 66);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](152, "92 - PUBLIC SERVICE COMMISSION");
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "option", 67);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154, "94 - STATISTICAL");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "option", 68);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156, "99 - Unknown Department");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "Designation ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](158, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "*");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](159, "Designation ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](161, "*");
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](162, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](163, "input", 69);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "input", 21);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](164, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](166, "District ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "District ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](168, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](170, "input", 70);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](70, "input", 22);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](171, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](172, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](173, "Office Address 1 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](174, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "Office Address 1 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](175, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](176, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](177, "textarea", 71);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](178, "div", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180, "Offie Address 2 ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](181, "span", 12);
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](183, "textarea", 72);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](77, "textarea", 23);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](184, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](186, "TIN Number ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "Offie Address 2 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](187, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](81, "span", 12);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](188, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](189, "input", 73);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "textarea", 24);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](190, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](192, "TAN Number ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](193, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "TIN Number ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](194, "*");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](87, "span", 12);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](195, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](196, "input", 74);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](89, "input", 25);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](197, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](198, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](199, "Email ID ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "TAN Number ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](200, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](201, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](202, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](203, "input", 75);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](96, "input", 26);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206, "Mobile Number ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, "Email ID ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](207, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](208, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](209, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](210, "input", 76);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "div", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](212, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](213, "Word Verification ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](214, "span", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](216, "div", 77);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](217, "img", 78);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](103, "input", 27);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](218, "div", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](219, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "label");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](220, "Enter Please Enter The Text as Shown Above ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, "Mobile Number ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](221, "span", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "span", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](222, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "*");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](223, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](224, "input", 79);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "input", 28);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](225, "div", 80);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "div", 29);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](226, "input", 81);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "input", 30);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -15530,7 +15244,65 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(RcoReportComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              $.getJSON('http://sikkimfred.local.api/api/RCORegistration/all', function (data) {
+                makeTable(data);
+              });
+
+              function makeTable(data) {
+                var table = " <table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">\n        <thead>\n          <tr>\n          <th>SL No.</th> \n          <th>Name</th>\n          <th>REG.Type</th>\n          <th>Department</th>\n          <th>Designation</th> \n          <th>District</th>\n          <th>Office Address(1)</th>\n          <th>Office Address(2)</th>\n          <th>Tin No</th> \n          <th>Tan No</th>\n          <th>Email</th>\n           <th>Accept</th>\n          <th>Delete</th>\n            </tr>\n        </thead>\n       \n        <tbody>";
+                $.each(data, function (i, item) {
+                  table += "  <tr>\n        <td>".concat(i + 1, "</td>\n        <td>").concat(item.adminName, "</td>\n        <td>").concat(item.registrationType, "</td>\n        <td>").concat(item.department, "</td>\n        <td>").concat(item.designation, "</td>\n        <td>").concat(item.district, "</td>\n        <td>").concat(item.officeAddress1, "</td>\n        <td>").concat(item.officeAddress2, "</td>\n        <td>").concat(item.tinNumber, "</td>\n        <td>").concat(item.tanNumber, "</td>\n        <td>").concat(item.emailId, "</td>\n        \n        <td><button class=\"btn btn-success accept\" regid=\"").concat(item.id, "\">Accept</button></td>\n       <td><button class=\"btn btn-danger delete\" id=\"").concat(item.id, "\">Delete</button></td>\n      </tr>");
+                });
+                table += "</tbody>\n      </table>";
+                $('#result').html(table);
+              }
+
+              $('#result').on('click', '.accept', function () {
+                var url = 'http://sikkimfred.local.api/api/RCORegistration/approve';
+                var regId = $(this).attr('regid');
+                var data = {
+                  regId: parseInt(regId),
+                  approvedBy: 1
+                };
+                console.log('sending data', data);
+                fetch(url, {
+                  method: 'POST',
+                  body: JSON.stringify(data),
+                  headers: new Headers({
+                    'Content-Type': 'application/json'
+                  })
+                }).then(function (res) {
+                  return res.json();
+                }).catch(function (error) {
+                  return console.error("Error", error);
+                }).then(function (result) {
+                  console.log("response", result);
+                });
+              });
+              $('#result').on('click', '.delete', function () {
+                var id = $(this).attr('id');
+                console.log("id hai", id);
+                fetch('http://sikkimfred.local.api/api/RCORegistration/' + id, {
+                  method: 'DELETE'
+                }).then(function (res) {
+                  return res.text();
+                }) // or res.json()
+                .then(function (res) {
+                  return refresh();
+                });
+              });
+
+              function refresh() {
+                $.getJSON('http://sikkimfred.local.api/api/RCORegistration/all', function (data) {
+                  makeTable(data);
+                });
+              }
+            });
+          })(jQuery);
+        }
       }]);
 
       return RcoReportComponent;
@@ -15543,9 +15315,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     RcoReportComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RcoReportComponent,
       selectors: [["app-rco-report"]],
-      decls: 72,
+      decls: 14,
       vars: 0,
-      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "dataTable", "width", "100%", "cellspacing", "0", 1, "table", "table-bordered"], [1, "btn", "btn-success"], [1, "btn", "btn-danger"]],
+      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "result"]],
       template: function RcoReportComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-adminn-avbar");
@@ -15576,189 +15348,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "table", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "thead");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "SL No.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Name");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "REG.Type");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Department");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "DE Signation");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "District");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Office Address(1)");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Office Address(2)");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Tin No");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Tan No");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Email");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Accept");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "Delete");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "tbody");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "Tiger Nixon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "Tiger Nixon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "button", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "Accept");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "button", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "Delete");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -15837,7 +15427,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(RcoUsersComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              $.getJSON('http://sikkimfred.local.api/api/user/rco', function (data) {
+                makeTable(data);
+              });
+
+              function makeTable(data) {
+                var table = " <table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">\n        <thead>\n          <tr>\n              <th>SL No.</th> \n            <th>Name</th>\n            <th>Reg. Type</th>\n            <th>User ID</th>\n            </tr>\n        </thead>\n       \n        <tbody>";
+                $.each(data, function (i, item) {
+                  table += "  <tr>\n            <td>".concat(i + 1, "</td>\n            <td>").concat(item.userName, "</td>\n            <td>").concat(item.registrationType, "</td>\n            <td>").concat(item.id, "</td>\n          \n           <td><button class=\"btn btn-primary\">Send Details</button></td>\n          </tr>");
+                });
+                table += "</tbody>\n      </table>";
+                $('#result').html(table);
+              }
+            });
+          })(jQuery);
+        }
       }]);
 
       return RcoUsersComponent;
@@ -15850,9 +15457,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     RcoUsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RcoUsersComponent,
       selectors: [["app-rco-users"]],
-      decls: 37,
+      decls: 14,
       vars: 0,
-      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "dataTable", "width", "100%", "cellspacing", "0", 1, "table", "table-bordered"], [1, "btn", "btn-primary"]],
+      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "result"]],
       template: function RcoUsersComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-adminn-avbar");
@@ -15883,83 +15490,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "table", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "thead");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "SL No.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Name");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Reg. Type");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "User ID");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "tbody");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Tiger Nixon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "button", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Send Details");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -16198,6 +15729,179 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           selector: 'app-receipt',
           templateUrl: './receipt.component.html',
           styleUrls: ['./receipt.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/recover-user-password/recover-user-password.component.ts":
+  /*!**************************************************************************!*\
+    !*** ./src/app/recover-user-password/recover-user-password.component.ts ***!
+    \**************************************************************************/
+
+  /*! exports provided: RecoverUserPasswordComponent */
+
+  /***/
+  function srcAppRecoverUserPasswordRecoverUserPasswordComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RecoverUserPasswordComponent", function () {
+      return RecoverUserPasswordComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var RecoverUserPasswordComponent =
+    /*#__PURE__*/
+    function () {
+      function RecoverUserPasswordComponent() {
+        _classCallCheck(this, RecoverUserPasswordComponent);
+      }
+
+      _createClass(RecoverUserPasswordComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              console.log('helo admin');
+              $('#login').click(function () {
+                if ($('#userName').val() == [] || $('#userName').val() == "" || $('#userName').val() == "null" || $('#userName').val() == null) alert("Please Enter Username");else {
+                  var url = 'http://sikkimfred.local.api/api/user/recoverpassword';
+                  var data = {
+                    userName: $('#userName').val()
+                  };
+                  console.log('sending data', data);
+                  fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: new Headers({
+                      'Content-Type': 'application/json'
+                    })
+                  }).then(function (res) {
+                    return res.json();
+                  }).catch(function (error) {
+                    return console.error("Error", error);
+                  }).then(function (result) {
+                    console.log("response aaya", result);
+                    if (result.error.message == "User with username jnaman345@gmail.com does not exist.") alert("Username Does not exists");else alert("Link has been seet to your email id");
+                  });
+                }
+              });
+            });
+          })(jQuery);
+        }
+      }]);
+
+      return RecoverUserPasswordComponent;
+    }();
+
+    RecoverUserPasswordComponent.ɵfac = function RecoverUserPasswordComponent_Factory(t) {
+      return new (t || RecoverUserPasswordComponent)();
+    };
+
+    RecoverUserPasswordComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: RecoverUserPasswordComponent,
+      selectors: [["app-recover-user-password"]],
+      decls: 21,
+      vars: 0,
+      consts: [[1, "container"], [1, "row", "justify-content-center"], [1, "col-sm-12", "col-md-12", "col-lg-5", "pb-5"], ["action", "mail.php", "method", "post"], [1, "card", "border-primary", "rounded-0"], [1, "card-header", "p-0"], [1, "bg-info", "text-white", "text-center", "py-2"], [1, "card-body", "p-3"], [1, "form-group"], [2, "color", "red", "margin", "0px"], [1, "input-group", "mb-2"], ["type", "text", "id", "userName", "name", "email", "placeholder", "Enter Username", "required", "", 1, "form-control"], [1, "text-center"], ["type", "button", "id", "login", "value", "Recover Password", 1, "btn", "btn-info", "btn-block", "rounded-0", "py-2"]],
+      template: function RecoverUserPasswordComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "form", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h3");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " Recover Password");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "label");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Username ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "*");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "input", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "input", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlY292ZXItdXNlci1wYXNzd29yZC9yZWNvdmVyLXVzZXItcGFzc3dvcmQuY29tcG9uZW50LmNzcyJ9 */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RecoverUserPasswordComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-recover-user-password',
+          templateUrl: './recover-user-password.component.html',
+          styleUrls: ['./recover-user-password.component.css']
         }]
       }], function () {
         return [];
@@ -17352,7 +17056,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(SuperAdminUsersComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          (function ($) {
+            $(document).ready(function () {
+              $.getJSON('http://sikkimfred.local.api/api/user/admin', function (data) {
+                makeTable(data);
+              });
+
+              function makeTable(data) {
+                var table = " <table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">\n        <thead>\n          <tr>\n              <th>SL No.</th> \n            <th>Name</th>\n           <th>User ID</th>\n            </tr>\n        </thead>\n       \n        <tbody>";
+                $.each(data, function (i, item) {
+                  table += "  <tr>\n            <td>".concat(i + 1, "</td>\n            <td>").concat(item.userName, "</td>\n              <td>").concat(item.id, "</td>\n          \n           <td><button class=\"btn btn-primary\">Send Details</button></td>\n          </tr>");
+                });
+                table += "</tbody>\n      </table>";
+                $('#result').html(table);
+              }
+            });
+          })(jQuery);
+        }
       }]);
 
       return SuperAdminUsersComponent;
@@ -17365,9 +17086,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     SuperAdminUsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SuperAdminUsersComponent,
       selectors: [["app-super-admin-users"]],
-      decls: 33,
+      decls: 14,
       vars: 0,
-      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "dataTable", "width", "100%", "cellspacing", "0", 1, "table", "table-bordered"], [1, "btn", "btn-primary"]],
+      consts: [[1, "content-wrapper"], [1, "container"], [1, "row"], [1, "col-lg-12"], [1, "card", "mb-3"], [1, "card-header"], [1, "fa", "fa-table"], [1, "card-body"], [1, "table-responsive"], ["id", "result"]],
       template: function SuperAdminUsersComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-adminn-avbar");
@@ -17398,71 +17119,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "table", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "thead");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "SL No.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Name");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "th");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "User ID");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "tbody");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "tr");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Tiger Nixon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "System Architect");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "1234567890");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "td");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "button", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Send Details");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 

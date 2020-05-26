@@ -14,11 +14,25 @@ export class DdoRegisterationComponent implements OnInit {
   ngOnInit(){
     (function ($) {
       $(document).ready(function(){
+        let department = []
+        let ddo_code = []
+       $.getJSON('http://sikkimfred.local.api/api/department',data=>{
+         department = data
+        fillDropDown('categoryid', data, 'Choose Department', 0) 
         
-       $.getJSON('https://www.deloservices.com/api/index',data=>{
-        fillDropDown('categoryid', data, 'Choose Category', 0) 
+       })
+
+       $.getJSON('http://sikkimfred.local.api/api/department',data=>{
+         ddo_code = data
+        fillDropDown('ddo_code', [], 'Choose DDO Code', 0) 
         console.log("data work",data)
        })
+
+
+       $('#categoryid').change(() => {
+        const filteredData = ddo_code.filter(item => item.departmentid == $('#categoryid').val())
+        fillDropDown('ddo_code', filteredData, 'Choose DDO Code', 0)
+    })
 
        function fillDropDown(id, data, label, selectedid = 0) {
         $(`#${id}`).empty()

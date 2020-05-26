@@ -35,7 +35,8 @@ import { DdoUsersComponent } from "./ddo-users/ddo-users.component";
 import { RcoUsersComponent } from "./rco-users/rco-users.component";
 import { SuperAdminUsersComponent } from "./super-admin-users/super-admin-users.component";
 import { SbsComponent } from "./sbs/sbs.component";
-import {UpdatePasswordComponent} from "./update-password/update-password.component"
+import {UpdatePasswordComponent} from "./update-password/update-password.component";
+import {RecoverUserPasswordComponent} from "./recover-user-password/recover-user-password.component"
 
 
 const routes: Routes = [
@@ -73,7 +74,8 @@ const routes: Routes = [
   {path:'rco-users',component:RcoUsersComponent},
   {path:'super-admin-users',component:SuperAdminUsersComponent},
   {path:'sbs',component:SbsComponent},
-  {path:'update-password', component:UpdatePasswordComponent}
+  {path:'update-password', component:UpdatePasswordComponent},
+  {path:'recover-user-password',component:RecoverUserPasswordComponent}
 
 ];
 

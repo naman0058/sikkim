@@ -36,8 +36,12 @@ import { RcoUsersComponent } from "./rco-users/rco-users.component";
 import { SuperAdminUsersComponent } from "./super-admin-users/super-admin-users.component";
 import { SbsComponent } from "./sbs/sbs.component";
 import {UpdatePasswordComponent} from "./update-password/update-password.component";
-import {RecoverUserPasswordComponent} from "./recover-user-password/recover-user-password.component"
-
+import {RecoverUserPasswordComponent} from "./recover-user-password/recover-user-password.component";
+import {GpfDetailsComponent} from "./gpf-details/gpf-details.component";
+import {ProfilePayslipComponent} from "./profile-payslip/profile-payslip.component";
+import {ProfileDetailsComponent} from "./profile-details/profile-details.component";
+import {PayslipDetailsComponent} from "./payslip-details/payslip-details.component";
+import {ReportsFormComponent} from "./reports-form/reports-form.component"
 
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
@@ -75,8 +79,12 @@ const routes: Routes = [
   {path:'super-admin-users',component:SuperAdminUsersComponent},
   {path:'sbs',component:SbsComponent},
   {path:'update-password', component:UpdatePasswordComponent},
-  {path:'recover-user-password',component:RecoverUserPasswordComponent}
-
+  {path:'recover-user-password',component:RecoverUserPasswordComponent},
+  {path : 'report-form', component:ReportsFormComponent},
+  {path :'gpf-details',component:GpfDetailsComponent},
+  {path : 'profile-and-payslip',component:ProfilePayslipComponent},
+  {path : 'profile-details', component:ProfileDetailsComponent},
+  {path : 'payslip-details', component:PayslipDetailsComponent}
 ];
 
 @NgModule({

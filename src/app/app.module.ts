@@ -44,6 +44,11 @@ import { SuperAdminUsersComponent } from './super-admin-users/super-admin-users.
 import { UpdatePasswordComponent } from './update-password/update-password.component';
 import { AdminnAvbarComponent } from './adminn-avbar/adminn-avbar.component';
 import { RecoverUserPasswordComponent } from './recover-user-password/recover-user-password.component';
+import { GpfDetailsComponent } from './gpf-details/gpf-details.component';
+import { ProfilePayslipComponent } from './profile-payslip/profile-payslip.component';
+import { ProfileDetailsComponent } from './profile-details/profile-details.component';
+import { PayslipDetailsComponent } from './payslip-details/payslip-details.component';
+import { ReportsFormComponent } from './reports-form/reports-form.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +93,12 @@ import { RecoverUserPasswordComponent } from './recover-user-password/recover-us
     SuperAdminUsersComponent,
     UpdatePasswordComponent,
     AdminnAvbarComponent,
-    RecoverUserPasswordComponent
+    RecoverUserPasswordComponent,
+    GpfDetailsComponent,
+    ProfilePayslipComponent,
+    ProfileDetailsComponent,
+    PayslipDetailsComponent,
+    ReportsFormComponent
   ],
   imports: [
     BrowserModule,

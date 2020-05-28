@@ -38,7 +38,7 @@ export class AdminLoginComponent implements OnInit {
             if(result.error.message == "Invalid username or password.")
             alert("Invalid username or password.")
             else
-            window.location.href="/Admin-Dashboard"
+          console.log("response recieve",result)
             })
 
         }

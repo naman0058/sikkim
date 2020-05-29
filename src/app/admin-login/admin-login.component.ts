@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 declare  var jQuery:  any;
 @Component({
   selector: 'app-admin-login',
@@ -7,7 +8,7 @@ declare  var jQuery:  any;
 })
 export class AdminLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
 
@@ -35,19 +36,29 @@ export class AdminLoginComponent implements OnInit {
             }).then(res=>res.json())
             .catch(error => console.error("Error",error))
             .then (result => {
+              console.log("result",result)
             if(result.error.message == "Invalid username or password.")
             alert("Invalid username or password.")
-            else
-          console.log("response recieve",result)
+            else{
+              //console.log("response recieve",result)
+              done()
+            }
+        
             })
 
         }
         })
 
+        
+
       })
     })(jQuery);
 
-
+    function done(){
+     window.location.href="/Admin-Dashboard"
+    }
   }
+
+
 
 }

@@ -14,11 +14,35 @@ export class DdoRegisterationComponent implements OnInit {
   ngOnInit(){
     (function ($) {
       $(document).ready(function(){
-        let department = []
-        let ddo_code = []
+        let department = [];
+        let district = [];
+        let designation = [];
+        let ddo_code = [];
+      
+
        $.getJSON('http://sikkimfred.local.api/api/department',data=>{
          department = data
         fillDropDown('categoryid', data, 'Choose Department', 0) 
+        
+       })
+
+
+        $.getJSON('http://sikkimfred.local.api/api/ddo',data=>{
+        console.log('ddo_code',data)
+         ddo_code = data
+        fillDropDown1('ddo_code', data, 'Choose DDO Code', 0) 
+        
+       })
+
+        $.getJSON('http://sikkimfred.local.api/api/district',data=>{
+         district = data
+        fillDropDown('districtid', data, 'Choose District', 0) 
+        
+       })
+
+        $.getJSON('http://sikkimfred.local.api/api/designation',data=>{
+         designation = data
+        fillDropDown('designationid', data, 'Choose Designation', 0) 
         
        })
 
@@ -47,6 +71,19 @@ export class DdoRegisterationComponent implements OnInit {
         })
     }
 
+
+ function fillDropDown1(id, data, label, selectedid = 0) {
+        $(`#${id}`).empty()
+        $(`#${id}`).append($('<option>').val("null").text(label))
+    
+        $.each(data, (i, item) => {
+            if (item.id == selectedid) {
+                $(`#${id}`).append($('<option selected>').val(item.id).text(item.name))
+            } else {
+                $(`#${id}`).append($('<option>').val(item.id).text(item.code))
+            }
+        })
+    }
 
 
       });

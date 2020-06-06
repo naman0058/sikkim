@@ -13,7 +13,7 @@ export class DdoReportComponent implements OnInit {
     (function ($) {
       $(document).ready(function(){
        
-       $.getJSON('http://sikkimfred.local.api/api/DDORegistration/all',data=>{
+       $.getJSON('http://sikkimfred.local.api/api/DDORegistration/pending',data=>{
         
        makeTable(data)
         
@@ -87,22 +87,42 @@ export class DdoReportComponent implements OnInit {
             .then (result => {
             
             console.log("response",result)
+           // refresh1()
             
             })
     })
 
 
 
-    $('#result').on('click', '.delete', function() {
+     $('#result').on('click', '.delete', function() {
       const id = $(this).attr('id')
       console.log("id hai",id)
 
       fetch('http://sikkimfred.local.api/api/DDORegistration/' + id, {
         method: 'DELETE',
-      })
-            .then(res => res.text()) // or res.json()
-      .then(res => console.log("response",res))
+      }).then(res => res.text()) // or res.json()
+      .then(res => refresh())
     })
+
+
+
+function refresh(){
+  
+  $.getJSON('http://sikkimfred.local.api/api/DDORegistration/pending',data=>{
+     makeTable(data)
+     alert("Request Deleted Successfully")
+    })
+}
+
+
+
+function refresh1(){
+  
+  $.getJSON('http://sikkimfred.local.api/api/DDORegistration/pending',data=>{
+     makeTable(data)
+     alert("Request Accepted Successfully")
+    })
+}
 
 
       });

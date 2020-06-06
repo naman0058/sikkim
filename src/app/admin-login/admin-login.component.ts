@@ -35,19 +35,29 @@ export class AdminLoginComponent implements OnInit {
             }).then(res=>res.json())
             .catch(error => console.error("Error",error))
             .then (result => {
-            if(result.error.message == "Invalid username or password.")
-            alert("Invalid username or password.")
-            else
-          console.log("response recieve",result)
+              console.log("result",result)
+            if(result.error)
+            alert("Invalid username or password.");
+            else{
+              //console.log("response recieve",result)
+              done()
+            }
+        
             })
 
         }
         })
 
+        
+
       })
     })(jQuery);
 
-
+    function done(){
+     window.location.href="/Admin-Dashboard"
+    }
   }
+
+
 
 }

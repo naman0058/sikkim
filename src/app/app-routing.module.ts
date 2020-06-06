@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
 //import {NavbarComponent} from './navbar/navbar.component'
 import {NavbarComponent} from './navbar/navbar.component'
 import {HomeComponent} from './home/home.component'
@@ -42,6 +43,14 @@ import {ProfilePayslipComponent} from "./profile-payslip/profile-payslip.compone
 import {ProfileDetailsComponent} from "./profile-details/profile-details.component";
 import {PayslipDetailsComponent} from "./payslip-details/payslip-details.component";
 import {ReportsFormComponent} from "./reports-form/reports-form.component"
+import { RcoDdoNavbarComponent } from "./rco-ddo-navbar/rco-ddo-navbar.component";
+import { SbsAdminComponent } from "./sbs-admin/sbs-admin.component";
+import {SbsPaymentDetailsComponent} from "./sbs-payment-details/sbs-payment-details.component";
+import {SbsRecieptDetailsComponent} from "./sbs-reciept-details/sbs-reciept-details.component";
+import {SbsPaymentRecieptComponent} from "./sbs-payment-reciept/sbs-payment-reciept.component";
+import {SbsAdminRegistrationComponent} from "./sbs-admin-registration/sbs-admin-registration.component";
+import {SbsAdminUserComponent} from "./sbs-admin-user/sbs-admin-user.component";
+
 
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
@@ -84,7 +93,12 @@ const routes: Routes = [
   {path :'gpf-details',component:GpfDetailsComponent},
   {path : 'profile-and-payslip',component:ProfilePayslipComponent},
   {path : 'profile-details', component:ProfileDetailsComponent},
-  {path : 'payslip-details', component:PayslipDetailsComponent}
+  {path : 'payslip-details', component:PayslipDetailsComponent},
+  {path : 'rco-ddo-navbar',component : RcoDdoNavbarComponent},
+  {path : 'sbs-admin' , component : SbsAdminComponent },
+  {path : 'sbs-payment-reciept' , component : SbsPaymentRecieptComponent },
+  {path : 'sbs-payment-details' , component : SbsPaymentDetailsComponent },
+  {path : 'sbs-reciept-details' , component : SbsRecieptDetailsComponent},
 ];
 
 @NgModule({

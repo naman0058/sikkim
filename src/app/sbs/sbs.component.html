@@ -20,26 +20,28 @@
          
       <!-- Example DataTables Card-->
       <div class="card mb-3">
+        <form action="http://sikkimfred.local.api/sbsfile/upload" method="post" enctype="multipart/form-data">
         <div class="card-header">
           <i class="fa fa-table"></i> SBS Upload</div>
-        <div class="card-body">
-         
+       
 
-<select name="" id="" class="form-control">
+
+        <div class="card-body">
+      
+<select name="FileType" id="fileType" class="form-control">
 <option>Choose Category</option>
 <option>Reciept</option>
 <option>Payment</option>
 </select>
 <br>
 
-<input type="file" class="form-control">
-
-
+<input type="file" name="File" class="form-control">
 
           </div>
             <div class="modal-footer">
-             <a class="btn btn-primary" style="color: white" >Save</a>
+            <button type="submit" class="btn btn-primary">Save</button>
           </div>
+          </form>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { doesNotReject } from 'assert';
 declare var jQuery: any;
 @Component({
   selector: 'app-rco-registeration',
@@ -16,6 +17,7 @@ export class RcoRegisterationComponent implements OnInit {
 
         $.getJSON('http://sikkimfred.local.api/api/department', data => {
           department = data
+          console.log(data)
           fillDropDown('department', data, 'Choose Department', 0)
 
         })
@@ -30,16 +32,19 @@ export class RcoRegisterationComponent implements OnInit {
           else if ($('#district').val() == null || $('#district').val() == "null" || $('#district').val() == [] || $('#district').val() == "") alert("Enter District...")
           else if ($('#officeAddress1').val() == null || $('#officeAddress1').val() == "null" || $('#officeAddress1').val() == [] || $('#officeAddress1').val() == "") alert("Enter Office Address...")
           else if ($('#officeAddress2').val() == null || $('#officeAddress2').val() == "null" || $('#officeAddress2').val() == [] || $('#officeAddress2').val() == "") alert("Enter Office Address...")
-          else if ($('#tinNumber').val() == null || $('#tinNumber').val() == "null" || $('#tinNumber').val() == [] || $('#tinNumber').val() == "") alert("Enter Tin Number...")
-          else if ($('#tanNumber').val() == null || $('#tanNumber').val() == "null" || $('#tanNumber').val() == [] || $('#tanNumber').val() == "") alert("Enter Tan Number...")
+          // else if ($('#tinNumber').val() == null || $('#tinNumber').val() == "null" || $('#tinNumber').val() == [] || $('#tinNumber').val() == "") alert("Enter Tin Number...")
+          // else if ($('#tanNumber').val() == null || $('#tanNumber').val() == "null" || $('#tanNumber').val() == [] || $('#tanNumber').val() == "") alert("Enter Tan Number...")
           else if ($('#emailId').val() == null || $('#emailId').val() == "null" || $('#emailId').val() == [] || $('#emailId').val() == "") alert("Enter Email ID...")
           else if ($('#contactNumber').val() == null || $('#contactNumber').val() == "null" || $('#contactNumber').val() == [] || $('#contactNumber').val() == "") alert("Enter Contact Number...")
-          else {
+         else if(!$('#contactNumber').val().match('[0-9]{10}'))  {
+          alert("Please put 10 digit mobile number");
+         }
+         else {
             var url ='http://sikkimfred.local.api/api/RCORegistration'
             let insertobj = {
               RegistrationType : $('#RegistrationType').val(),
               adminName : $('#adminName').val(),
-              department : $('#department').val(),
+              departmentId : parseInt($('#department').val()),
               designation : $('#designation').val(),
               district : $('#district').val(),
               officeAddress1 : $('#officeAddress1').val(),
@@ -59,9 +64,20 @@ export class RcoRegisterationComponent implements OnInit {
               }).then(res=>res.json())
               .catch(error => console.error("Error",error))
               .then (result => {
+              console.log("result",result)
+             if(result.errors){
+              alert("Enter Correct Emailid format");
               
-             if(result.msg=="success") alert("Successfully Inserted")
-             else alert("An error occured..Please try again later")
+            } 
+            else if(result.error){
+              alert("Emailid already exists")
+              
+            }
+          
+             else{
+              alert("Succesfully Inserted");
+              done()
+             }
               
               })
           }
@@ -86,7 +102,9 @@ export class RcoRegisterationComponent implements OnInit {
 
       });
     })(jQuery);
+    function done(){
+      window.location.href="/home"
+     }
   }
 
 }
-

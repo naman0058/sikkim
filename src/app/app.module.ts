@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ChartsModule } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -49,6 +49,14 @@ import { ProfilePayslipComponent } from './profile-payslip/profile-payslip.compo
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { PayslipDetailsComponent } from './payslip-details/payslip-details.component';
 import { ReportsFormComponent } from './reports-form/reports-form.component';
+import { RcoDdoNavbarComponent } from './rco-ddo-navbar/rco-ddo-navbar.component';
+import { SbsAdminComponent } from './sbs-admin/sbs-admin.component';
+import { SbsPaymentRecieptComponent } from './sbs-payment-reciept/sbs-payment-reciept.component';
+import { SbsRecieptPaymentComponent } from './sbs-reciept-payment/sbs-reciept-payment.component';
+import { SbsPaymentDetailsComponent } from './sbs-payment-details/sbs-payment-details.component';
+import { SbsRecieptDetailsComponent } from './sbs-reciept-details/sbs-reciept-details.component';
+import { SbsAdminRegistrationComponent } from './sbs-admin-registration/sbs-admin-registration.component';
+import { SbsAdminUserComponent } from './sbs-admin-user/sbs-admin-user.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +106,15 @@ import { ReportsFormComponent } from './reports-form/reports-form.component';
     ProfilePayslipComponent,
     ProfileDetailsComponent,
     PayslipDetailsComponent,
-    ReportsFormComponent
+    ReportsFormComponent,
+    RcoDdoNavbarComponent,
+    SbsAdminComponent,
+    SbsPaymentRecieptComponent,
+    SbsRecieptPaymentComponent,
+    SbsPaymentDetailsComponent,
+    SbsRecieptDetailsComponent,
+    SbsAdminRegistrationComponent,
+    SbsAdminUserComponent
   ],
   imports: [
     BrowserModule,

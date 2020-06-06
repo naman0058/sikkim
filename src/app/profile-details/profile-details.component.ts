@@ -13,18 +13,27 @@ export class ProfileDetailsComponent implements OnInit {
   ngOnInit(): void {
 
     (function ($) {
-     
-          var url = 'http://sikkimfred.local.api/api/user/login';
-       
-       
-          var data = {
-            number : '123456789'
-            // password : $('#password').val()
-          }
-          console.log('sending data',data)
+
+     $(document).ready(function(){
+    $('#details').hide()
+
+
+    $('#submit').click(function(){
+
+
+if( $('#employee_code').val() == null || $('#employee_code').val() == "null" || $('#employee_code').val() == [] || $('#employee_code').val() == "" )
+  alert("Enter Employee Code...")
+else if( $('#office_code').val() == null || $('#office_code').val() == "null" || $('#office_code').val() == [] || $('#office_code').val() == "" )
+  alert("Enter Office Code...")
+else{
+let employee_code = $('#employee_code').val()
+let office_code = $('#office_code').val()
+   var url = `http://local.api.com/api/employee/details?empCode=${employee_code}&officeId=${office_code}`;
+
+   
             fetch(url,{
-            method : 'POST',
-            body: JSON.stringify(data),
+            method : 'GET',
+        
             headers : new Headers({
              'Content-Type': 'application/json'
             })
@@ -37,6 +46,13 @@ export class ProfileDetailsComponent implements OnInit {
        
 
       })
+}
+
+     
+       
+})      
+    })
+     
     })(jQuery);
 
 

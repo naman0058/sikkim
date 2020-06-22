@@ -89,11 +89,7 @@
                                     
                                         <div class="input-group mb-2">
                                                
-                                                <select class="form-control">
-                                                    <option>Select Name of DDO</option>
-                                                        <option value="UMESH TRIKHATRI">UMESH TRIKHATRI</option>
-                                                    
-                                                    </select>
+                                               <input type="text" id="ddo_name" readonly="" class="form-control">
                                                                                  
                                                 </div>
                                         </div>
@@ -104,10 +100,8 @@
                                                 <label>Designation  <span style="color: red;margin: 0px">**</span></label>
                                        
                                             <div class="input-group mb-2">
-                                                    <select class="form-control" id="designationid">
-                                                      
-                                                        
-                                                        </select>
+                                                   
+                                               <input type="text" id="designationid" readonly="" class="form-control">
                                                                                      
                                                     </div>
                                             </div>
@@ -119,9 +113,8 @@
                                                 
                                                 <div class="input-group mb-2">
                                                         
-                                                        <select class="form-control" id="districid">
-                                                           
-                                                            </select>
+                                                     
+                                               <input type="text" id="districtid" readonly="" class="form-control">
                                                                                          
                                                         </div>
                                                 </div>
@@ -135,7 +128,7 @@
                                                     <div class="input-group mb-2">
                                                            
                                                             
-                                                            <textarea class="form-control" id="officeaddress1" placeholder="Enter Office Address 1" required></textarea>
+                                                            <textarea class="form-control" id="officeAddress1" placeholder="Enter Office Address 1" required></textarea>
                                                         </div>
                                                     </div>
                     
@@ -146,7 +139,7 @@
                                     
                                                         <div class="input-group mb-2">
                                                            
-                                                            <textarea class="form-control" id="officeaddress2" placeholder="Enter Office Address 2" required></textarea>
+                                                            <textarea class="form-control" id="officeAddress2" placeholder="Enter Office Address 2" required></textarea>
                                                         </div>
                                                     </div>
 
@@ -176,7 +169,7 @@
                                     
                                     <div class="input-group mb-2">
                                        
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                                        <input type="email" class="form-control" id="emailId" name="email" placeholder="Enter Email" required>
                                     </div>
                                 </div>
 
@@ -185,13 +178,13 @@
                                     
                                     <div class="input-group mb-2">
                                         
-                                        <input type="number" class="form-control" id="number" name="email" placeholder="Enter Mobile Number" required>
+                                        <input type="number" class="form-control" id="contactNumber" name="email" placeholder="Enter Mobile Number" required>
                                     </div>
                                 </div>
 
 
                                 <div class="text-center">
-                                    <input type="submit" value="Save & Send" class="btn btn-info btn-block rounded-0 py-2">
+                                    <input type="button" id="submit" value="Save & Send" class="btn btn-info btn-block rounded-0 py-2">
                                 </div>
                             </div>
 

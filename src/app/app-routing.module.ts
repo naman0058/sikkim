@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ChartsModule } from 'ng2-charts';
 //import {NavbarComponent} from './navbar/navbar.component'
 import {NavbarComponent} from './navbar/navbar.component'
 import {HomeComponent} from './home/home.component'
@@ -50,6 +49,7 @@ import {SbsRecieptDetailsComponent} from "./sbs-reciept-details/sbs-reciept-deta
 import {SbsPaymentRecieptComponent} from "./sbs-payment-reciept/sbs-payment-reciept.component";
 import {SbsAdminRegistrationComponent} from "./sbs-admin-registration/sbs-admin-registration.component";
 import {SbsAdminUserComponent} from "./sbs-admin-user/sbs-admin-user.component";
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
 const routes: Routes = [
@@ -99,6 +99,7 @@ const routes: Routes = [
   {path : 'sbs-payment-reciept' , component : SbsPaymentRecieptComponent },
   {path : 'sbs-payment-details' , component : SbsPaymentDetailsComponent },
   {path : 'sbs-reciept-details' , component : SbsRecieptDetailsComponent},
+  {path : 'change-password',component:ChangePasswordComponent}
 ];
 
 @NgModule({

@@ -14,7 +14,7 @@ export class DdoReportComponent implements OnInit {
       $(document).ready(function(){
        
        $.getJSON('http://sikkimfred.local.api/api/DDORegistration/pending',data=>{
-        
+        console.log(data)
        makeTable(data)
         
        })
@@ -24,8 +24,7 @@ export class DdoReportComponent implements OnInit {
         <thead>
           <tr>
           <th>SL No.</th> 
-          <th>Name</th>
-          <th>REG.Type</th>
+         <th>EmailID</th>
           <th>Department</th>
           <th>Designation</th> 
           <th>District</th>
@@ -33,7 +32,7 @@ export class DdoReportComponent implements OnInit {
           <th>Office Address(2)</th>
           <th>Tin No</th> 
           <th>Tan No</th>
-          <th>Email</th>
+          <th>Contact Number</th>
            <th>Accept</th>
           <th>Delete</th>
             </tr>
@@ -44,16 +43,15 @@ export class DdoReportComponent implements OnInit {
 
         table+=`  <tr>
         <td>${i+1}</td>
-        <td>${item.adminName}</td>
-        <td>${item.registrationType}</td>
-        <td>${item.department}</td>
-        <td>${item.designation}</td>
-        <td>${item.district}</td>
+            <td>${item.emailId}</td>
+        <td>${item.departmentName}</td>
+        <td>${item.desginationName}</td>
+        <td>${item.districtName}</td>
         <td>${item.officeAddress1}</td>
         <td>${item.officeAddress2}</td>
         <td>${item.tinNumber}</td>
         <td>${item.tanNumber}</td>
-        <td>${item.emailId}</td>
+        <td>${item.contactNumber}</td>
         
         <td><button class="btn btn-success accept" regid="${item.id}">Accept</button></td>
        <td><button class="btn btn-danger delete" id="${item.id}">Delete</button></td>
@@ -86,8 +84,8 @@ export class DdoReportComponent implements OnInit {
             .catch(error => console.error("Error",error))
             .then (result => {
             
-            console.log("response",result)
-           // refresh1()
+           // console.log("response",result)
+            refresh1()
             
             })
     })

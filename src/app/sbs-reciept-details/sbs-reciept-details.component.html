@@ -7,52 +7,113 @@
      <!-- Icon Cards-->
      
      <!-- Area Chart Example-->
-    
-     <div class="row">
-       <div class="col-lg-12">
-         <!-- Example Bar Chart Card-->
-        
-         <!-- Card Columns Example Social Feed-->
-       
-       
-         <!-- Example Pie Chart Card-->
-         
-        
-     <!-- Example DataTables Card-->
-     <div class="card mb-3">
-       <div class="card-header">
-         <i class="fa fa-table"></i> Reciept Details</div>
-       <div class="card-body">
-        
 
 
-<div>
-    <p>From Date</p> 
-    <input type="date" name="" id="" class="form-control"><br>
-</div>
-    
-<div>
-    <p>To Date</p> 
-    <input type="date" name="" id="" class="form-control"><br>
+<div class="row">
+<div class="col-lg-4">
+   <div class="card mb-3">
+ <div class="card-header">
+         <i class="fa fa-table"></i> Reciept Details
 </div>
 
-
-
+ <div class="card-body">
+  
+<div>
+    <p>Choose Year</p> 
+    <input type="date" name="" id="from_date1" class="form-control"><br>
+</div>
+ 
          </div>
            <div class="modal-footer">
-            <a class="btn btn-primary" style="color: white" >Show Report</a>
+            <a class="btn btn-primary show_yearly" style="color: white" >Show Yearly Report</a>
          </div>
-       </div>
-     </div>
 
+
+
+   </div>
+</div>
+<div class="col-lg-4">
+     <div class="card mb-3">
+ <div class="card-header">
+         <i class="fa fa-table"></i> Reciept Details
+</div>
+
+ <div class="card-body">
+  
+<div>
+    <p>Choose Year</p> 
+    <input type="date" name="" id="from_date" class="form-control"><br>
+</div>
+
+
+<div>
+    <p>Choose Year</p> 
+    <input type="date" name="" id="to_date" class="form-control"><br>
+</div>
+
+ 
+         </div>
+           <div class="modal-footer">
+            <a class="btn btn-primary show" style="color: white" >Show Difference Report</a>
+         </div>
+
+
+
+   </div>
+</div>
+<div class="col-lg-4">
+    <div class="card mb-3">
+ <div class="card-header">
+         <i class="fa fa-table"></i> Reciept Details
+</div>
+
+ <div class="card-body">
+  
+<div>
+    <p>Choose From Month</p> 
+    <input type="date" name="" id="from_month" class="form-control"><br>
+</div>
+
+
+<div>
+    <p>ChooseTo Month</p> 
+    <input type="date" name="" id="to_month" class="form-control"><br>
+</div>
+
+ 
+         </div>
+           <div class="modal-footer">
+            <a class="btn btn-primary show_month" style="color: white" >Show Monthly Report</a>
+         </div>
+
+
+
+   </div>
+</div>
+</div>
+
+   
 
  <div id="chart-container">
 
                                                     <canvas id="mycanvas"></canvas>
                                                 </div>
+
+
+
+                                                 <div id="chart-container">
+
+                                                    <canvas id="mycanvas1"></canvas>
+                                                </div>
+
+
+<br>
+
+<div id="result"></div>
+
                                             </div>
 
 
      
-   </div>
+  
  </div>

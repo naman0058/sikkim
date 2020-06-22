@@ -1,6 +1,7 @@
+import { ReactiveFormsModule , FormsModule  } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ChartsModule } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -57,6 +58,7 @@ import { SbsPaymentDetailsComponent } from './sbs-payment-details/sbs-payment-de
 import { SbsRecieptDetailsComponent } from './sbs-reciept-details/sbs-reciept-details.component';
 import { SbsAdminRegistrationComponent } from './sbs-admin-registration/sbs-admin-registration.component';
 import { SbsAdminUserComponent } from './sbs-admin-user/sbs-admin-user.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -114,11 +116,15 @@ import { SbsAdminUserComponent } from './sbs-admin-user/sbs-admin-user.component
     SbsPaymentDetailsComponent,
     SbsRecieptDetailsComponent,
     SbsAdminRegistrationComponent,
-    SbsAdminUserComponent
+    SbsAdminUserComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

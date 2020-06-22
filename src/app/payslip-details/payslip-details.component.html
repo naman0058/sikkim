@@ -343,8 +343,21 @@
                                         <label>Choose Year <span style="color: red;margin: 0px">*</span></label>
                                     
                                     <div class="input-group mb-2">
+                                       <select id="year" class="form-control">
+                                         <option value="2015">2015</option>
+                                         <option value="2016">2016</option>
+                                         <option value="2017">2017</option>
+                                         <option value="2018">2018</option>
+                                         <option value="2019">2019</option>
+                                         <option value="2020">2020</option>
+                                         <option value="2021">2021</option>
+                                         <option value="2022">2022</option>
+                                         <option value="2023">2023</option>
+                                         <option value="2024">2024</option>
+                                         <option value="2025">2025</option>
+                                        
+                                       </select>
                                        
-                                        <input type="date" class="form-control" id="year" name="email" placeholder="Enter Employee Code" required>
                                     </div>
                                 </div>
 
@@ -364,331 +377,45 @@
     </div>
 </div>
 
-
-
 <div id="details">
-      <!-- Begin content header -->
-      <section class="my-app__header">
-        <div class="container">
-          <div class="my-app__header-inner">
-            <div class="my-app__header-text media">
-             <img src="/images/dataresult[1][0].imagedata" style="width: 80px;">
-              <div class="media-body">
-                <h1 class="my-app__header-title">Hi there, Lorem!</h1>
-                <!-- <div class="my-input input-group mb-3">
-                 <button class="btn btn-outline-dark" >Edit Profile</button>
-                </div>-->
-              </div> 
-            </div>
-            <div class="my-action-buttons my-app__header__buttons">
-              <!-- <button class="my-action-button">
-                <img class="my-action-button__icon" src="./images/icon-money.svg" alt>
-                Send money
-              </button> -->
-           
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End content header -->
+  <!-- Begin content header -->
+ <div id="header"></div>
+  <!-- End content header -->
 
-      <!-- Begin content body -->
-      <section class="my-app__body">
-        <div class="container">
-          <div class="row">
-          
+  <!-- Begin content body -->
+  <section class="my-app__body">
+    <div class="container">
+      <div class="row">
+      
+<div class="col-lg-3">
+  <div id="personal"></div>
+</div>
+<div class="col-lg-3">
+   <div id="makeallowances"></div>
+</div>
+<div class="col-lg-3">
+<div id="makedeductionbycheques"></div>
+</div>
+<div class="col-lg-3">
+<div id="deductionsByAdjustment"></div>
+</div>
 
-
-
-            <div class="col-4">
-             
-
-                <!-- Begin Pending card -->
-                <div class="my-card card">
-                  <div class="my-card__header card-header bg-primary" style="height:50px">
-                    <h3 class="my-card__header-title card-title" style="color:white;margin-top:-10px;">Personal Details</h3>
-                    <!-- <a class="my-card__header-link" href="#">See all →</a> -->
-                  </div>
-                  <ul class="my-list list-group list-group-flush">
-                    
-                   
-                    
-                    <li class="my-list-item list-group-item">
-                     
-                      <div class="my-list-item__text">
-                        <h4 class="my-list-item__text-title">Employee Code</h4>
-                    
-                      </div>
-                      <div class="my-list-item__fee">
-                        <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >1</a>
-                      </div>
-                    </li>
-              
-              
-                    <li class="my-list-item list-group-item">
-                     
-                      <div class="my-list-item__text">
-                        <h4 class="my-list-item__text-title">Designation</h4>
-                    
-                      </div>
-                      <div class="my-list-item__fee">
-                        <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >Account Officer</a>
-                      </div>
-                    </li>
-  
-  
-                    <li class="my-list-item list-group-item">
-                     
-                      <div class="my-list-item__text">
-                        <h4 class="my-list-item__text-title">Section </h4>
-                    
-                      </div>
-                      <div class="my-list-item__fee">
-                        <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >Head Office</a>
-                      </div>
-                    </li>
-  
-  
-                    <li class="my-list-item list-group-item">
-                     
-                      <div class="my-list-item__text">
-                        <h4 class="my-list-item__text-title">Department</h4>
-                    
-                      </div>
-                      <div class="my-list-item__fee">
-                        <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >Finance Department</a>
-                      </div>
-                    </li>
-  
-                  </ul>
-                </div>
-                <!-- End Pending card -->
-  
-              
-              </div>
-
-
-            <div class="col-4">
-             
-
-              <!-- Begin Pending card -->
-              <div class="my-card card">
-                <div class="my-card__header card-header bg-primary" style="height:50px">
-                  <h3 class="my-card__header-title card-title" style="color:white;margin-top:-10px;">Allowances Details</h3>
-                  <!-- <a class="my-card__header-link" href="#">See all →</a> -->
-                </div>
-                <ul class="my-list list-group list-group-flush">
-                  
-                 
-                  
-                  <li class="my-list-item list-group-item">
-                   
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">Basic Pay</h4>
-                  
-                    </div>
-                    <div class="my-list-item__fee">
-                      <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >57000</a>
-                    </div>
-                  </li>
-            
-            
-                  <li class="my-list-item list-group-item">
-                   
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">NPA</h4>
-                  
-                    </div>
-                    <div class="my-list-item__fee">
-                      <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >0</a>
-                    </div>
-                  </li>
-
-
-                  <li class="my-list-item list-group-item">
-                   
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">DA </h4>
-                  
-                    </div>
-                    <div class="my-list-item__fee">
-                      <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >6840</a>
-                    </div>
-                  </li>
-
-
-                  <li class="my-list-item list-group-item">
-                   
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">HRAWS</h4>
-                  
-                    </div>
-                    <div class="my-list-item__fee">
-                      <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >6840</a>
-                    </div>
-                  </li>
-
-             
-                  <li class="my-list-item list-group-item">
-                   
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">SBCA </h4>
-                  
-                    </div>
-                    <div class="my-list-item__fee">
-                      <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >7706</a>
-                    </div>
-                  </li>
-
-                  
-
-                
-                
-                </ul>
-              </div>
-              <!-- End Pending card -->
-
-            
-            </div>
-
-            <div class="col-4">
-               
-  
-                <!-- Begin Pending card -->
-                <div class="my-card card">
-                  <div class="my-card__header card-header bg-primary" style="height:50px">
-                    <h3 class="my-card__header-title card-title" style="color:white;margin-top:-10px;">Deduction Details</h3>
-                    <!-- <a class="my-card__header-link" href="#">See all →</a> -->
-                  </div>
-                  <ul class="my-list list-group list-group-flush">
-                    
-                   
-                    
-                    <li class="my-list-item list-group-item">
-                   
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">By Cheque</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >Life Insurance Co. Ltd - 721</a>
-                        </div>
-                      </li>
-                
-                
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">GPF Subscription</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >5000</a>
-                        </div>
-                      </li>
-    
-    
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">GIS State </h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >30</a>
-                        </div>
-                      </li>
-
-
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Professional Tax </h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >200</a>
-                        </div>
-                      </li>
-    
-    
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Vehicle Charge</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >123456789</a>
-                        </div>
-                      </li>
-    
-                 
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Stamp Duty </h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >7706</a>
-                        </div>
-                      </li>
-    
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Gross Pay</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >1465</a>
-                        </div>
-                      </li>
-
-                        <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Total Deduction</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >1465</a>
-                        </div>
-                      </li>
-
-                      <li class="my-list-item list-group-item">
-                       
-                        <div class="my-list-item__text">
-                          <h4 class="my-list-item__text-title">Net Pay</h4>
-                      
-                        </div>
-                        <div class="my-list-item__fee">
-                          <a class="my-card__header-link quiz" id="dataresult[0][i].iddata" style="cursor: pointer;" >1465</a>
-                        </div>
-                      </li>
-    
-                   
-                  
-                  </ul>
-                </div>
-                <!-- End Pending card -->
-  
-              
-              </div>
-
-
-
-
-            
-          </div>
-        </div>
+  <div class="col-lg-3">
+<div id="recoveries"></div>
+</div>
+<div class="col-lg-3">
+<div id="others"></div>
+</div>
+      </div>
+    </div>
 
 <br/>
-      
-      </section>
-      <!-- End content body -->
-  </div>
+  
+  </section>
+  <!-- End content body -->
+</div>
+
+<div id="result"></div>
     </main>
 </div>
 

@@ -20,25 +20,27 @@
          
       <!-- Example DataTables Card-->
       <div class="card mb-3">
-        <form action="http://sikkimfred.local.api/sbsfile/upload" method="post" enctype="multipart/form-data">
+     <form [formGroup]="form" (ngSubmit)="submitForm()">
         <div class="card-header">
           <i class="fa fa-table"></i> SBS Upload</div>
        
 
 
-        <div class="card-body">
-      
-<select name="FileType" id="fileType" class="form-control">
+        <div class="card-body form-field">
+          <div class="form-group"> 
+<select name="FileType" id="fileType" formControlName="name" class="form-control" >
 <option>Choose Category</option>
-<option>Reciept</option>
-<option>Payment</option>
+<option value="Receipt">Reciept</option>
+<option value="Payment">Payment</option>
 </select>
+</div>
 <br>
-
-<input type="file" name="File" class="form-control">
+<div class="form-group">
+<input type="file" name="File" class="form-control" (change)="uploadFile($event)" >
+</div>
 
           </div>
-            <div class="modal-footer">
+            <div class="modal-footer form-group">
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
           </form>

@@ -13,10 +13,11 @@ export class UpdatePasswordComponent implements OnInit {
 
     (function ($) {
       $(document).ready(function(){
-  
+        let searchParams = new URLSearchParams(window.location.search)
+    let param = searchParams.get('token')
         $('.submit').click(function(){
-          if($('#old_password').val() == [] || $('#old_password').val() == "" || $('#old_password').val() == "null" || $('#old_password').val() == null) alert("Please Enter Old Password");
-        else if($('#new_password').val() == [] || $('#new_password').val() == "" || $('#new_password').val() == "null" || $('#new_password').val() == null) alert("Please Enter New Password");
+         
+         if($('#new_password').val() == [] || $('#new_password').val() == "" || $('#new_password').val() == "null" || $('#new_password').val() == null) alert("Please Enter New Password");
         else if($('#new_password').val() == [] || $('#new_password').val() == "" || $('#new_password').val() == "null" || $('#new_password').val() == null) alert("Confrim New Password");
         else if($('#confirm_new_password').val() == [] || $('#confirm_new_password').val() == "" || $('#confirm_new_password').val() == "null" || $('#confirm_new_password').val() == null) alert("Please Enter Password")
        
@@ -24,12 +25,12 @@ export class UpdatePasswordComponent implements OnInit {
           
           
           if( $('#new_password').val()  ==  $('#confirm_new_password').val() ){
-            var url = 'http://sikkimfred.local.api/api/user/login';
+            var url = 'http://sikkimfred.local.api/api/user/resetpassword';
             
           var data = {
-            userName : $('#old_password').val(),
-            password : $('#new_password').val(),
-            confirm_new_password : $('#confirm_new_password').val()
+            sentinel: param,
+            newPassword : $('#new_password').val(),
+            confirmPassword : $('#confirm_new_password').val()
           }
 
 
@@ -44,12 +45,12 @@ export class UpdatePasswordComponent implements OnInit {
           .catch(error => console.error("Error",error))
           .then (result => {
             console.log("result",result)
-          // if(result.error)
-          // alert("Invalid username or password.");
-          // else{
-          //   //console.log("response recieve",result)
+           if(result.error)
+           alert("An error occured");
+           else{
+        alert("update Successfully")
           
-          // }
+           }
       
           })
 

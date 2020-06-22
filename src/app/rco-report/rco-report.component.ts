@@ -15,12 +15,17 @@ export class RcoReportComponent implements OnInit {
       $(document).ready(function(){
        
        $.getJSON('http://sikkimfred.local.api/api/RCORegistration/pending',data=>{
-        
+          let users = data[0]
+
+
+// for(var key in users){
+//   console.log(key + ':' + users[key])
+// }
        makeTable(data)
         
        })
 
-      function makeTable(data){
+      function makeTable(users){
         let table = ` <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
           <tr>
@@ -41,11 +46,11 @@ export class RcoReportComponent implements OnInit {
         </thead>
        
         <tbody>`
-        $.each(data,(i,item)=>{
+        $.each(users,(i,item)=>{
 
         table+=`  <tr>
         <td>${i+1}</td>
-        <td>${item.adminName}</td>
+        <td>${item.emailId}</td>
         <td>${item.registrationType}</td>
         <td>${item.department}</td>
         <td>${item.designation}</td>

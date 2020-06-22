@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! E:\work'\sikkim\src\styles.css */
+    /*! E:\Work\sikkim\src\styles.css */
     "./src/styles.css");
     /***/
   }
